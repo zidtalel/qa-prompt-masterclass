@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Section 1 - Le Paysage de l'IA Générative en QA</title>
+    <link rel="stylesheet" href="../assets/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <div class="nav-title">📚 Formation QA & IA Générative</div>
+        <ul>
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="#" class="active">Section 1</a></li>
+          <li><a href="../../section-2/index.html">Section 2</a></li>
+          <li><a href="../../section-3/index.html">Section 3</a></li>
+          <li><a href="../../section-4/index.html">Section 4</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <div class="container">
+        <h1>🤖 Le Paysage de l'IA Générative en QA</h1>
+        <p class="subtitle">Section 1 - Contexte et Fondamentaux (25 min)</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- HERO SECTION -->
+        <section class="hero">
+          <h2>Pourquoi cette section ?</h2>
+          <p>
+            Comprendre comment l'IA Générative peut transformer vos tests :
+            accélérer, optimiser, et libérer du temps pour les tâches critiques.
+          </p>
+        </section>
+
+        <!-- OBJECTIFS PÉDAGOGIQUES -->
+        <section>
+          <h2>🎯 Objectifs de cette section</h2>
+          <ul>
+            <li>
+              <strong>Définir l'IA</strong> comme accélérateur, non remplaçant
+            </li>
+            <li>
+              <strong>Comprendre</strong> les Grands Modèles de Langage (LLMs)
+              en contexte QA
+            </li>
+            <li>
+              <strong>Identifier</strong> les tâches QA les plus optimisables
+            </li>
+            <li>
+              <strong>Reconnaître</strong> le potentiel ET les limites critiques
+              de l'IA
+            </li>
+          </ul>
+        </section>
+
+        <!-- PART 1 : INTRODUCTION -->
+        <section>
+          <h2>1️⃣ L'IA comme Accélérateur</h2>
+
+          <div class="card highlight">
+            <h3>Concept Central</h3>
+            <p>
+              L'IA Générative n'est pas magique, ce sont des
+              <strong>LLMs entraînés</strong> sur des quantités massives de code
+              et de texte.
+            </p>
+            <p>
+              <strong>Résultat</strong> : des machines excellentes à
+              <strong>reconnaître des patterns et les reproduire</strong> -
+              utile en QA !
+            </p>
+          </div>
+
+          <h3>
+            📊 Le Paradigme du Prompting Avancé : Passer du "Comment" au "Quoi"
+          </h3>
+
+          <table>
+            <tr>
+              <th>Avant (sans IA)</th>
+              <th>Après (avec IA + bon prompt)</th>
+            </tr>
+            <tr>
+              <td>✏️ Rédaction manuelle du code</td>
+              <td>🤖 IA génère le code, vous validez</td>
+            </tr>
+            <tr>
+              <td>⏱️ 15-20 min par test complexe</td>
+              <td>⚡ 2-3 min avec un bon prompt</td>
+            </tr>
+            <tr>
+              <td>❌ Syntaxe et formatage à maîtriser</td>
+              <td>✅ Standardisation automatique</td>
+            </tr>
+            <tr>
+              <td>🤔 Concentration sur la façon de coder</td>
+              <td>🎯 Concentration sur la stratégie de test</td>
+            </tr>
+          </table>
+
+          <h3>📈 Les Tâches QA les Plus Optimisables</h3>
+
+          <div class="grid">
+            <div class="card success">
+              <h4>✅ Rédaction</h4>
+              <ul>
+                <li>Génération de cas de test <strong>Gherkin</strong></li>
+                <li>Rédaction de <strong>User Stories</strong> structurées</li>
+                <li>Documentation de scénarios</li>
+              </ul>
+              <p><strong>Impact</strong> : 🟢 Très Optimisable</p>
+            </div>
+
+            <div class="card success">
+              <h4>✅ Codage</h4>
+              <ul>
+                <li>Génération de scripts <strong>API setup</strong></li>
+                <li>Fonctions utilitaires complexes</li>
+                <li>Mocks de données réalistes</li>
+              </ul>
+              <p><strong>Impact</strong> : 🟢 Très Optimisable</p>
+            </div>
+
+            <div class="card success">
+              <h4>✅ Analyse</h4>
+              <ul>
+                <li>Débogage de <strong>logs</strong> (outil Locus)</li>
+                <li>Identification des causes de flakiness</li>
+                <li>Analyse d'erreurs complexes</li>
+              </ul>
+              <p><strong>Impact</strong> : 🟢 Très Optimisable</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PART 2 : POTENTIEL VS LIMITES -->
+        <section>
+          <h2>2️⃣ Potentiel vs. Limites : Le Contrat de Confiance</h2>
+
+          <h3>✅ Ce que l'IA fait TRÈS bien (Potentiel)</h3>
+
+          <div class="card success">
+            <h4>✓ Génération de Structure</h4>
+            <p>
+              Créer des formats rigides (JSON, Gherkin, TypeScript) en quelques
+              secondes.
+            </p>
+          </div>
+
+          <div class="card success">
+            <h4>✓ Standardisation</h4>
+            <p>
+              Appliquer des contraintes strictes (ex: n'utiliser que
+              <code>data-cy</code> pour les sélecteurs).
+            </p>
+          </div>
+
+          <div class="card success">
+            <h4>✓ Diagnostic Rapide</h4>
+            <p>
+              Analyser un log volumineux et proposer des hypothèses de
+              correction.
+            </p>
+          </div>
+
+          <div class="card success">
+            <h4>✓ Paraphrase Intelligente</h4>
+            <p>
+              Rédiger différentes versions du même test avec variations de
+              données.
+            </p>
+          </div>
+
+          <h3>⚠️ Les Limites Cruciales - Les Règles de l'Utilisateur</h3>
+
+          <div class="card danger">
+            <h4>⚠️ "Garbage In, Garbage Out"</h4>
+            <p>
+              Sans contexte précis, l'IA génère du code
+              <strong>générique et non conforme</strong> à votre infrastructure.
+            </p>
+            <p class="text-muted">
+              → C'est le pont vers la <strong>Section II (Prompting)</strong>
+            </p>
+          </div>
+
+          <div class="card danger">
+            <h4>⚠️ Pas de Jugement Métier</h4>
+            <p>
+              L'IA ne comprend pas la <strong>valeur d'un test</strong> sans un
+              prompt qui lui donne ce rôle (Persona, contexte métier).
+            </p>
+          </div>
+
+          <div class="card danger">
+            <h4>⚠️ Les Hallucinations</h4>
+            <p>
+              L'IA peut
+              <strong
+                >inventer des sélecteurs ou des fonctions qui n'existent
+                pas</strong
+              >
+              dans votre application.
+            </p>
+          </div>
+
+          <div class="card danger">
+            <h4>⚠️ Pas de Compréhension Réelle</h4>
+            <p>
+              L'IA ne "comprend" pas les règles métier - elle
+              <strong>mime les patterns</strong> qu'elle a vus en entraînement.
+            </p>
+          </div>
+
+          <div class="card warning">
+            <h3>💡 Le Message Clé</h3>
+            <p>
+              Plus vous maîtrisez le <strong>prompting</strong>, meilleur sera
+              le résultat. D'où la priorité à la <strong>Section II</strong>.
+            </p>
+          </div>
+        </section>
+
+        <!-- PART 3 : DÉMO WAOUH -->
+        <section>
+          <h2>3️⃣ Démonstration "Effet Waouh" 🚀</h2>
+
+          <h3>Scénario : Modification d'un Projet Redmine</h3>
+
+          <div class="card highlight">
+            <h4>⏱️ Comparaison Temps</h4>
+            <table>
+              <tr>
+                <th>Approche</th>
+                <th>Temps Estimé</th>
+                <th>Étapes</th>
+              </tr>
+              <tr>
+                <td><strong>Sans IA</strong></td>
+                <td>15-20 minutes</td>
+                <td>Consulter doc API → Écrire code → Tester</td>
+              </tr>
+              <tr>
+                <td><strong>Avec IA + bon prompt</strong></td>
+                <td>2-3 minutes</td>
+                <td>Copier prompt → IA génère → Adapter contexte</td>
+              </tr>
+              <tr>
+                <td><strong>Gain</strong></td>
+                <td><strong>80% de gain</strong></td>
+                <td>🎉 Libère du temps pour la stratégie</td>
+              </tr>
+            </table>
+          </div>
+
+          <h3>🔄 Les 3 Étapes de la Démo</h3>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Étape 1 : Création de Projet (API Setup)</h4>
+              <p>
+                Utiliser <strong>Prompt #1</strong> (disponible en Section 2)
+              </p>
+              <ul>
+                <li>Générer un script TypeScript pour l'API Redmine</li>
+                <li>Montrer la complexité du code généré</li>
+                <li>
+                  Souligner : ce résultat est possible grâce au prompt bien
+                  structuré
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <h4>Étape 2 : Test UI Complet</h4>
+              <p>Utiliser <strong>Prompt #2</strong></p>
+              <ul>
+                <li>Générer un test Cypress end-to-end</li>
+                <li>Montrer le Page Object Model appliqué automatiquement</li>
+                <li>
+                  Démontrer la standardisation (sélecteurs data-cy uniquement)
+                </li>
+              </ul>
+            </div>
+
+            <div class="timeline-item">
+              <h4>Étape 3 : Nettoyage (API Teardown)</h4>
+              <p>Utiliser <strong>Prompt #3</strong></p>
+              <ul>
+                <li>Générer le script de suppression du projet</li>
+                <li>Montrer l'intégrité du cycle Setup → Test → Teardown</li>
+                <li>
+                  Message final : c'est une démonstration du prompting avancé
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card warning">
+            <h3>🎯 Le Message de la Démo</h3>
+            <p>
+              Ce résultat n'est possible que si l'on maîtrise
+              <strong>l'Anatomie du Prompt</strong> :
+            </p>
+            <ul>
+              <li><strong>Rôle</strong> : Qui êtes-vous pour l'IA ?</li>
+              <li><strong>Tâche</strong> : Qu'attends-tu de moi ?</li>
+              <li><strong>Contexte</strong> : Quel est mon environnement ?</li>
+              <li>
+                <strong>Contraintes</strong> : Quelles règles dois-je respecter
+                ?
+              </li>
+              <li>
+                <strong>Format</strong> : Comment dois-je livrer le résultat ?
+              </li>
+            </ul>
+            <p class="mt-lg"><strong>→ Transition vers Section II</strong></p>
+          </div>
+        </section>
+
+        <!-- CONTEXTE MÉTIER -->
+        <section>
+          <h2>💰 Contexte Métier : Secteur Financier</h2>
+
+          <p>
+            Tous les exemples et cas d'usage sont contextualisés dans le
+            <strong>domaine financier</strong> :
+          </p>
+
+          <div class="grid">
+            <div class="card">
+              <h4>🏦 Virement Bancaire</h4>
+              <p>
+                Transfert de fonds entre comptes, avec validation IBAN/BIC et
+                montants.
+              </p>
+            </div>
+
+            <div class="card">
+              <h4>🔐 Authentification 2FA</h4>
+              <p>Flux d'authentification à deux facteurs (SMS, email, app).</p>
+            </div>
+
+            <div class="card">
+              <h4>💳 Validation de Montants</h4>
+              <p>
+                Montants financiers : 0,01€ à 999 999,99€ avec formats
+                localisés.
+              </p>
+            </div>
+
+            <div class="card">
+              <h4>📋 Conformité & Audit</h4>
+              <p>Audit trails, PCI DSS, GDPR, traçabilité des transactions.</p>
+            </div>
+          </div>
+
+          <div class="card highlight">
+            <p>
+              <strong>Pourquoi ce contexte ?</strong> Pour rendre les exemples
+              <strong>réalistes et applicables</strong> à votre travail
+              quotidien en finance.
+            </p>
+          </div>
+        </section>
+
+        <!-- RESSOURCES -->
+        <section>
+          <h2>📚 Ressources & Références</h2>
+
+          <div class="card">
+            <h3>Documents de Support</h3>
+            <ul>
+              <li>
+                <strong>Prompts Avancés</strong> : Retrouvez les 14 prompts
+                utilisés dans cette formation en
+                <a href="../../prompts-avances.html">Section Prompts</a>
+              </li>
+              <li>
+                <strong>INSTRUCTIONS Complètes</strong> : Documentation
+                pédagogique détaillée en <a href="../../INSTRUCTIONS.md">ici</a>
+              </li>
+              <li>
+                <strong>Contexte Financier</strong> : Spécifications métier
+                (IBAN, montants, 2FA) en
+                <a href="../../contexte-financier.md">Contexte Métier</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Lectures Recommandées</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://github.com/brexhq/prompt-engineering"
+                  target="_blank"
+                  >Prompt Engineering Guide (Brex)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://platform.openai.com/docs/guides/prompt-engineering"
+                  target="_blank"
+                  >OpenAI - Prompt Engineering Best Practices</a
+                >
+              </li>
+              <li>
+                <a href="https://www.anthropic.com/" target="_blank"
+                  >Anthropic - Documentation Claude</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Outils Utilisés</h3>
+            <ul>
+              <li>
+                <strong>GitHub Copilot</strong> : Assistant IA intégré dans
+                votre IDE
+              </li>
+              <li>
+                <strong>Cypress</strong> : Framework de test E2E en JavaScript
+              </li>
+              <li>
+                <strong>TestComplete</strong> : Automatisation UI sans code
+              </li>
+              <li>
+                <strong>Jira/Xray</strong> : Gestion des tests et cas de test en
+                Gherkin
+              </li>
+              <li>
+                <strong>Redmine</strong> : Gestionnaire de projet (cas d'usage)
+              </li>
+              <li><strong>Locus</strong> : Analyse de logs et diagnostics</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- SUIVANT -->
+        <section class="text-center mt-lg">
+          <h2>➡️ Prêt pour la Section 2 ?</h2>
+          <p>
+            Maintenant que vous comprenez le <strong>pourquoi</strong> et le
+            <strong>potentiel</strong> de l'IA, passons à la
+            <strong>Section II</strong> pour apprendre l'<strong
+              >"Art du Prompting"</strong
+            >
+            - le cœur de cette formation.
+          </p>
+          <a href="../../section-2/index.html" class="button mt-lg"
+            >Section 2 : L'Art du Prompting →</a
+          >
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>📚 Formation QA & IA Générative | Section 1 - Le Paysage de l'IA</p>
+        <p>
+          🏦 Domaine : Finance | 🔧 Outils : Copilot, Cypress, TestComplete,
+          Jira/Xray
+        </p>
+        <p>
+          <small
+            >Durée : 25 min | Public : 16 participants (50% testeurs, 50%
+            scripteurs)</small
+          >
+        </p>
+        <p>
+          <small
+            >Déploiement :
+            <a
+              href="https://github.com/zidtalel/qa-prompt-masterclass"
+              target="_blank"
+              >GitHub Pages</a
+            >
+            | Last Updated: Nov 2025</small
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
