@@ -10,9 +10,9 @@
 
 **Objectif** : Transférer des compétences en prompting et intégration d'IA aux professionnels QA du domaine financier
 
-**Public** : 20-30 participants (50% testeurs manuels, 50% scripteurs)
+**Public** : 16 participants divisés en deux groupes de 8 chacun (50% testeurs manuels, 50% scripteurs). Chaque groupe aura une sessionde formation complète de 3h30.
 
-**Domaine** : Finance
+**Domaine** : Dévelpppement logiciel dans le domaine de la Finance
 
 **Plateforme** : GitHub Pages (hébergement gratuit, version control intégré)
 
