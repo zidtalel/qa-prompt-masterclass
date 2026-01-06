@@ -9,12 +9,12 @@
   <body>
     <nav>
       <div class="container">
-        <div class="nav-title">📚 Formation QA & IA Générative</div>
+        <div class="nav-title">Formation QA & IA Générative</div>
         <ul>
-          <li><a href="../../index.html">Accueil</a></li>
-          <li><a href="../../section-1/index.html">Section 1</a></li>
-          <li><a href="../../section-2/index.html">Section 2</a></li>
-          <li><a href="../../section-3/index.html">Section 3</a></li>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../section-1/index.html">Section 1</a></li>
+          <li><a href="../section-2/index.html">Section 2</a></li>
+          <li><a href="../section-3/index.html">Section 3</a></li>
           <li><a href="#" class="active">Section 4</a></li>
         </ul>
       </div>
@@ -22,53 +22,2541 @@
 
     <header>
       <div class="container">
-        <h1>⚡ Pouvoirs Avancés</h1>
-        <p class="subtitle">Section 4 - Perspectives Futures (30 min)</p>
+        <h1>⚡ Section 4 : Cas d'Usage Avancés & Perspectives</h1>
+        <p class="subtitle">Durée : 30 minutes</p>
       </div>
     </header>
 
     <main>
       <div class="container">
-        <div class="hero">
-          <h2>Section 4 en Préparation</h2>
-          <p>Cette section est actuellement en développement.</p>
+        <!-- HERO SECTION -->
+        <section class="hero">
+          <h2>Pourquoi cette section ?</h2>
           <p>
-            🔄 <strong>Contenu à venir :</strong> Injection de Contexte, Mutant
-            Testing, Impact Analysis, Documentation Auto, Collaboration, Futures
-            Tendances
+            Après avoir maîtrisé les fondamentaux du prompt engineering et
+            construit une application complète, explorons les techniques
+            avancées et les perspectives futures de l'IA en QA : de l'injection
+            de contexte intelligent aux agents autonomes.
           </p>
-        </div>
-
-        <section class="card highlight mt-lg">
-          <h2>📋 Topics Prévus</h2>
-          <ul>
-            <li>
-              <strong>Module 4.1 :</strong> Injection de Contexte Implicite
-            </li>
-            <li><strong>Module 4.2 :</strong> Mutant Testing assisté par IA</li>
-            <li><strong>Module 4.3 :</strong> Analyse d'Impact & Prédiction</li>
-            <li><strong>Module 4.4 :</strong> Génération de Documentation</li>
-            <li>
-              <strong>Module 4.5 :</strong> Collaboration & Bonnes Pratiques
-            </li>
-            <li>
-              <strong>Module 4.6 :</strong> Perspectives Futures - Agents
-              Autonomes, Auto-Healing Tests
-            </li>
-          </ul>
         </section>
 
-        <div class="text-center mt-lg">
-          <a href="../../index.html" class="button">← Retour à l'Accueil</a>
+        <!-- OBJECTIFS PÉDAGOGIQUES -->
+        <section class="objectives-section">
+          <h2>🎯 Objectifs de cette Section</h2>
+          <p class="intro-text">
+            À l'issue de cette section, vous serez capable de :
+          </p>
+          <div class="objectives-list">
+            <div class="objective-item">
+              <span class="objective-icon">🔗</span>
+              <div class="objective-content">
+                <strong>Maîtriser le contexte implicite</strong> — Utiliser
+                @workspace, #file et les participants pour injecter du contexte
+                intelligent
+              </div>
+            </div>
+            <div class="objective-item">
+              <span class="objective-icon">🧬</span>
+              <div class="objective-content">
+                <strong>Appliquer le Mutant Testing</strong> — Générer et
+                analyser des mutations de code pour renforcer vos tests
+              </div>
+            </div>
+            <div class="objective-item">
+              <span class="objective-icon">📊</span>
+              <div class="objective-content">
+                <strong>Anticiper les impacts</strong> — Utiliser l'IA pour
+                prédire les zones à risque et optimiser la couverture de tests
+              </div>
+            </div>
+            <div class="objective-item">
+              <span class="objective-icon">🚀</span>
+              <div class="objective-content">
+                <strong>Anticiper l'avenir</strong> — Comprendre les tendances
+                émergentes (agents autonomes, auto-healing tests)
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MODULE 4.1 : INJECTION DE CONTEXTE IMPLICITE -->
+        <section class="mt-xl">
+          <h2>🔗 Module 4.1 : Maîtriser le Contexte Implicite (10 min)</h2>
+          <p>
+            <strong>Workflow :</strong> Présentation (4 min) → Pratique (4 min)
+            → Débrief (2 min)
+          </p>
+
+          <div class="card mt-lg">
+            <h3>Au-delà du Prompt : Le Pouvoir du Contexte Implicite</h3>
+            <p>
+              Jusqu'ici, nous avons fourni le contexte
+              <strong>explicitement</strong>
+              dans nos prompts (en copiant du code, en décrivant les règles, en
+              attachant des fichiers). GitHub Copilot offre des
+              <strong>raccourcis intelligents</strong> pour injecter
+              automatiquement du contexte sans tout réécrire :
+            </p>
+            <ul class="mt-md">
+              <li>
+                <strong><code>@workspace</code></strong> : Analyse l'ensemble du
+                projet (structure, dépendances, patterns architecturaux)
+              </li>
+              <li>
+                <strong><code>#file</code></strong> ou
+                <strong><code>#fileName</code></strong> : Référence un fichier
+                spécifique sans le coller entièrement
+              </li>
+              <li>
+                <strong>Participants spécialisés</strong>
+                (<code>@terminal</code>, <code>@vscode</code>) : Accès à des
+                contextes spécialisés (historique terminal, configuration IDE)
+              </li>
+            </ul>
+            <p class="mt-md">
+              <strong>💡 Bénéfice :</strong> Prompts plus courts, contexte plus
+              riche, réponses plus précises et mieux adaptées à votre projet.
+            </p>
+          </div>
+
+          <!-- SCÉNARIO A -->
+          <div class="card success mt-lg">
+            <h4>A. Scénario 1 : Analyse d'Impact avec @workspace</h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Vous devez modifier une
+              méthode critique et voulez identifier tous les usages dans le
+              projet.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">@workspace Où est utilisée la méthode `getBatteryStatus()` dans le projet NavDash ? Liste tous les fichiers qui l'appellent et explique l'impact si je modifie sa signature pour retourner un objet BatteryInfo au lieu d'un nombre.</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>Scanner tout le workspace (JavaScript, Java, tests)</li>
+                  <li>
+                    Identifier les fichiers qui appellent
+                    <code>getBatteryStatus()</code>
+                  </li>
+                  <li>
+                    Analyser l'impact du changement de signature (type de
+                    retour)
+                  </li>
+                  <li>
+                    Proposer un plan de refactoring avec ordre de modifications
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCÉNARIO B -->
+          <div class="card success mt-lg">
+            <h4>B. Scénario 2 : Génération de Tests avec #file</h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Vous avez un fichier de
+              code existant et voulez générer des tests unitaires cohérents avec
+              sa structure.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">#DiagnosticController.java Génère des tests JUnit 5 pour toutes les méthodes publiques de ce Controller. Utilise Mockito pour les dépendances et assure-toi de tester les cas limites (batterie null, seuils négatifs).</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>
+                    Lire le contenu complet de
+                    <code>DiagnosticController.java</code>
+                  </li>
+                  <li>Identifier toutes les méthodes publiques</li>
+                  <li>
+                    Générer des tests avec configuration Mockito appropriée
+                  </li>
+                  <li>
+                    Inclure des cas limites (null, valeurs négatives, edge
+                    cases)
+                  </li>
+                  <li>
+                    Respecter les conventions JUnit 5 (@Test, @BeforeEach, etc.)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCÉNARIO C -->
+          <div class="card success mt-lg">
+            <h4>C. Scénario 3 : Debugging avec @terminal</h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Votre build Maven échoue
+              avec des erreurs cryptiques affichées dans le terminal.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">@terminal Pourquoi le build Maven échoue ? Analyse les erreurs affichées dans le terminal et propose des solutions concrètes.</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>Lire l'historique complet du terminal actif</li>
+                  <li>
+                    Identifier les erreurs Maven (dépendance manquante, version
+                    incompatible, etc.)
+                  </li>
+                  <li>
+                    Analyser les stack traces pour localiser la source du
+                    problème
+                  </li>
+                  <li>
+                    Proposer des solutions concrètes (modifier pom.xml, nettoyer
+                    le cache, etc.)
+                  </li>
+                  <li>Fournir les commandes exactes à exécuter</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAUSE PRATIQUE -->
+          <div class="card warning mt-lg">
+            <h3>⏸️ PAUSE PRATIQUE (4 min)</h3>
+            <h4>🎯 À vous de jouer !</h4>
+            <p>
+              Choisissez l'un des scénarios ci-dessus et testez-le sur votre
+              projet NavDash (ou un autre projet) :
+            </p>
+            <ol>
+              <li>
+                <strong>Option A :</strong> Utilisez
+                <code>@workspace</code> pour trouver tous les usages d'un
+                <code>data-cy</code> spécifique dans votre projet (ex:
+                <code>data-cy="battery-level"</code>)
+              </li>
+              <li>
+                <strong>Option B :</strong> Utilisez <code>#main.js</code> pour
+                demander une revue de code avec suggestions d'amélioration de
+                performance ou lisibilité
+              </li>
+              <li>
+                <strong>Option C :</strong> Si vous avez une erreur récente dans
+                votre terminal (npm, Maven, Python), utilisez
+                <code>@terminal</code> pour la débugger
+              </li>
+            </ol>
+
+            <div class="card info mt-md" style="background: #e3f2fd">
+              <h5>💡 Astuce Avancée : Combinez les Participants !</h5>
+              <p>
+                Vous pouvez utiliser plusieurs participants dans un même prompt
+                :
+              </p>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  margin-top: 0.5rem;
+                "
+              ><code style="color: #d4d4d4;">@workspace #prd.md Quels fichiers du projet ne respectent pas encore les règles définies dans le PRD ?</code></pre>
+              <p class="mt-md">
+                → L'IA va scanner le workspace ET lire le PRD pour faire une
+                analyse de conformité !
+              </p>
+            </div>
+          </div>
+
+          <!-- DÉBRIEF / SYNTHÈSE -->
+          <div class="card success mt-lg">
+            <h3>🎯 Débrief : Ce que vous venez de maîtriser</h3>
+
+            <h4 class="mt-lg">📊 Comparaison Avant / Maintenant</h4>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                margin-top: 1rem;
+              "
+            >
+              <div
+                style="background: #ffebee; padding: 1rem; border-radius: 4px"
+              >
+                <h5>❌ Avant (Sections 2-3)</h5>
+                <pre
+                  style="
+                    background: #1e1e1e;
+                    padding: 0.75rem;
+                    border-radius: 4px;
+                    font-size: 0.85em;
+                    margin-top: 0.5rem;
+                  "
+                ><code style="color: #d4d4d4;">Voici le code de DiagnosticController.java :
+
+[copier-coller 150 lignes de code]
+
+Génère des tests pour cette classe...</code></pre>
+                <p style="margin-top: 0.5rem; font-size: 0.9em">
+                  → Prompt de ~1200 caractères
+                </p>
+              </div>
+              <div
+                style="background: #e8f5e9; padding: 1rem; border-radius: 4px"
+              >
+                <h5>✅ Maintenant (Section 4)</h5>
+                <pre
+                  style="
+                    background: #1e1e1e;
+                    padding: 0.75rem;
+                    border-radius: 4px;
+                    font-size: 0.85em;
+                    margin-top: 0.5rem;
+                  "
+                ><code style="color: #d4d4d4;">#DiagnosticController.java Génère des tests JUnit 5 avec Mockito</code></pre>
+                <p style="margin-top: 0.5rem; font-size: 0.9em">
+                  → Prompt de ~70 caractères
+                </p>
+                <p style="margin-top: 0.5rem; font-size: 0.9em; color: #2e7d32">
+                  <strong
+                    >🎉 90% de caractères en moins, même résultat !</strong
+                  >
+                </p>
+              </div>
+            </div>
+
+            <h4 class="mt-lg">✅ Bénéfices Clés</h4>
+            <ul>
+              <li>
+                <strong>Gain de temps :</strong> Plus besoin de copier-coller du
+                code entre vos fichiers et le chat
+              </li>
+              <li>
+                <strong>Contexte enrichi :</strong> Avec
+                <code>@workspace</code>, l'IA voit l'architecture complète
+                (dependencies, patterns, conventions)
+              </li>
+              <li>
+                <strong>Prompts réutilisables :</strong> Le même prompt
+                fonctionne sur différents fichiers (remplacez juste #FileA par
+                #FileB)
+              </li>
+              <li>
+                <strong>Moins d'erreurs :</strong> Pas de risque d'oublier du
+                code pertinent ou de copier une version obsolète
+              </li>
+            </ul>
+
+            <h4 class="mt-lg">📚 Quand utiliser quoi ?</h4>
+            <table
+              style="width: 100%; border-collapse: collapse; margin-top: 0.5rem"
+            >
+              <thead>
+                <tr style="background: #f5f5f5">
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Participant
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Cas d'Usage
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Exemple
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>@workspace</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Questions larges sur le projet
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Architecture, impact, recherche globale
+                  </td>
+                </tr>
+                <tr style="background: #fafafa">
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>#file</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Actions ciblées sur un fichier
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Générer tests, refactoring, code review
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>@terminal</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Debugging d'erreurs runtime
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Build failures, erreurs d'exécution
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- MODULE 4.2 : MUTANT TESTING -->
+        <section class="mt-xl">
+          <h2>🧬 Module 4.2 : Mutant Testing Assisté par l'IA (8 min)</h2>
+          <p>
+            <strong>Workflow :</strong> Présentation (3 min) → Pratique (3 min)
+            → Débrief (2 min)
+          </p>
+
+          <div class="card mt-lg">
+            <h3>Renforcer vos Tests avec le Mutant Testing</h3>
+            <p>
+              Le <strong>Mutant Testing</strong> (ou Mutation Testing) est une
+              technique avancée qui consiste à introduire volontairement des
+              <strong>bugs artificiels</strong> (mutations) dans votre code pour
+              vérifier si vos tests les détectent.
+            </p>
+            <ul class="mt-md">
+              <li>
+                ✅ <strong>Mutant tué</strong> : Un test échoue suite à la
+                mutation → Le test est efficace
+              </li>
+              <li>
+                ⚠️ <strong>Mutant survivant</strong> : Le test passe malgré le
+                bug → Votre suite de tests a un trou de couverture
+              </li>
+            </ul>
+            <p class="mt-md">
+              <strong>Problème traditionnel :</strong> Les outils de mutation
+              testing comme PIT (Java), Stryker (JavaScript) nécessitent une
+              configuration complexe et génèrent beaucoup de bruit.
+            </p>
+            <p class="mt-md">
+              <strong>💡 Solution IA :</strong> GitHub Copilot peut générer des
+              mutations ciblées, expliquer pourquoi certains mutants survivent,
+              et suggérer les tests manquants.
+            </p>
+          </div>
+
+          <!-- LES 3 TYPES DE MUTATIONS -->
+          <div class="card info mt-lg">
+            <h4>📊 Les 3 Types de Mutations Classiques</h4>
+            <table
+              style="width: 100%; border-collapse: collapse; margin-top: 1rem"
+            >
+              <thead>
+                <tr style="background: #f5f5f5">
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Type de Mutation
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Exemple Original
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Exemple Muté
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Test Requis
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Opérateur conditionnel</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>if (battery &lt; 10)</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>if (battery &lt;= 10)</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Tester la valeur limite 10
+                  </td>
+                </tr>
+                <tr style="background: #fafafa">
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Valeur de retour</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>return true;</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>return false;</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Vérifier le retour dans tous les cas
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Opérateur arithmétique</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>total + tax</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>total - tax</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Tester avec valeurs réelles vs calcul attendu
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- SCÉNARIO A -->
+          <div class="card success mt-lg">
+            <h4>
+              A. Scénario 1 : Générer des Mutations pour Tester la Robustesse
+            </h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Vous avez une méthode
+              critique et voulez vérifier si vos tests la couvrent vraiment.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">#DiagnosticController.java Analyse la méthode `validateBatteryThreshold()`. Génère 5 mutations possibles de cette méthode (changements d'opérateurs, conditions, valeurs de retour) et explique quel test devrait échouer pour chaque mutation. Si aucun test n'échoue, propose le test manquant.</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>
+                    Lire la méthode <code>validateBatteryThreshold()</code>
+                  </li>
+                  <li>
+                    Proposer 5 mutations réalistes (ex:
+                    <code>&lt;</code> devient <code>&lt;=</code>,
+                    <code>10</code> devient <code>11</code>,
+                    <code>return true</code> devient <code>return false</code>)
+                  </li>
+                  <li>
+                    Pour chaque mutation, identifier le test JUnit qui devrait
+                    la détecter
+                  </li>
+                  <li>
+                    Si un mutant n'est pas couvert, générer le test manquant
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCÉNARIO B -->
+          <div class="card success mt-lg">
+            <h4>B. Scénario 2 : Analyse de Mutants Survivants</h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Votre outil de mutation
+              testing (PIT, Stryker) rapporte des mutants survivants, mais vous
+              ne comprenez pas pourquoi.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">@workspace J'ai un mutant survivant dans main.js : la condition `if (batteryLevel < 10)` a été mutée en `if (batteryLevel <= 10)` mais mes tests Cypress passent toujours. Pourquoi ? Quel test dois-je ajouter pour tuer ce mutant ?</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>
+                    Analyser les tests Cypress existants dans le workspace
+                  </li>
+                  <li>
+                    Identifier le manque de couverture (pas de test avec
+                    <code>batteryLevel = 10</code> exactement)
+                  </li>
+                  <li>
+                    Expliquer pourquoi le mutant survit (les tests utilisent 5
+                    et 15, mais jamais 10)
+                  </li>
+                  <li>
+                    Générer le test Cypress spécifique pour couvrir ce cas
+                    limite
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAUSE PRATIQUE -->
+          <div class="card warning mt-lg">
+            <h3>⏸️ PAUSE PRATIQUE (3 min)</h3>
+            <h4>🎯 À vous de jouer !</h4>
+            <p>Choisissez l'une des options suivantes :</p>
+            <ol>
+              <li>
+                <strong>Option A - Génération de mutations :</strong>
+                <ul>
+                  <li>
+                    Sélectionnez une méthode dans votre projet NavDash (ex:
+                    <code>calculateNetworkQuality()</code>)
+                  </li>
+                  <li>
+                    Utilisez le Prompt du Scénario A pour générer 5 mutations
+                  </li>
+                  <li>
+                    Vérifiez si vos tests existants détecteraient ces mutations
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Option B - Analyse manuelle :</strong>
+                <ul>
+                  <li>
+                    Prenez un fichier de test existant (ex:
+                    <code>networkAndBatteryValidation.cy.ts</code>)
+                  </li>
+                  <li>
+                    Demandez à l'IA :
+                    <code
+                      >#networkAndBatteryValidation.cy.ts Quelles mutations de
+                      code ces tests ne détecteraient PAS ? Propose 3 mutations
+                      qui survivraient.</code
+                    >
+                  </li>
+                  <li>Ajoutez les tests manquants suggérés</li>
+                </ul>
+              </li>
+            </ol>
+
+            <div class="card info mt-md" style="background: #e3f2fd">
+              <h5>💡 Bonus : Analyse Globale avec @workspace</h5>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  margin-top: 0.5rem;
+                "
+              ><code style="color: #d4d4d4;">@workspace Analyse tous mes tests Cypress. Quels types de mutations (conditionnels, arithmétiques, retours) seraient les plus susceptibles de survivre ? Identifie les 3 zones les moins bien testées.</code></pre>
+            </div>
+          </div>
+
+          <!-- DÉBRIEF / SYNTHÈSE -->
+          <div class="card success mt-lg">
+            <h3>🎯 Débrief : Ce que vous venez de maîtriser</h3>
+
+            <h4 class="mt-lg">
+              📊 La Différence entre Couverture de Code et Qualité de Tests
+            </h4>
+            <div
+              style="
+                background: #ffebee;
+                border-left: 4px solid #f44336;
+                padding: 1rem;
+                margin-top: 1rem;
+              "
+            >
+              <p style="margin: 0">
+                ❌ <strong>AVANT :</strong> "J'ai 90% de couverture de code →
+                mes tests sont bons"
+              </p>
+            </div>
+            <div
+              style="
+                background: #e8f5e9;
+                border-left: 4px solid #4caf50;
+                padding: 1rem;
+                margin-top: 0.5rem;
+              "
+            >
+              <p style="margin: 0">
+                ✅ <strong>MAINTENANT :</strong> "J'ai 90% de couverture ET mes
+                tests détectent les mutations → mes tests sont robustes"
+              </p>
+            </div>
+
+            <h4 class="mt-lg">🔄 Méthodologie avec l'IA</h4>
+            <ol>
+              <li>
+                <strong>Phase 1 :</strong> Générer des mutations avec Copilot
+                (pas besoin de PIT/Stryker)
+              </li>
+              <li>
+                <strong>Phase 2 :</strong> Identifier les mutants survivants
+                (trous dans les tests)
+              </li>
+              <li>
+                <strong>Phase 3 :</strong> Générer les tests manquants pour tuer
+                les mutants
+              </li>
+              <li>
+                <strong>Phase 4 :</strong> Répéter sur les zones critiques
+                (méthodes de validation, calculs)
+              </li>
+            </ol>
+
+            <h4 class="mt-lg">✅ Bénéfices Clés</h4>
+            <ul>
+              <li>
+                <strong>Tests plus robustes :</strong> Détecte les vrais bugs,
+                pas seulement la couverture syntaxique
+              </li>
+              <li>
+                <strong>Pas de configuration :</strong> Pas besoin
+                d'installer/configurer PIT, Stryker ou autres outils lourds
+              </li>
+              <li>
+                <strong>Explications pédagogiques :</strong> L'IA explique
+                <em>pourquoi</em> un mutant survit (pas juste un rapport)
+              </li>
+              <li>
+                <strong>Ciblé et rapide :</strong> Concentrez-vous sur les
+                méthodes critiques au lieu de tout muter aveuglément
+              </li>
+            </ul>
+
+            <h4 class="mt-lg">⚠️ Limites à Connaître</h4>
+            <ul>
+              <li>
+                L'IA génère des mutations <strong>théoriques</strong> (ne les
+                exécute pas automatiquement dans le code)
+              </li>
+              <li>
+                Pour une analyse exhaustive en production, les outils dédiés
+                (PIT/Stryker) restent recommandés
+              </li>
+              <li>
+                À utiliser comme <strong>complément pédagogique</strong>, pas
+                remplacement total des outils de mutation
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- MODULE 4.3 : ANALYSE D'IMPACT -->
+        <section class="mt-xl">
+          <h2>
+            📊 Module 4.3 : Analyse d'Impact & Prédiction de Risques (7 min)
+          </h2>
+          <p>
+            <strong>Workflow :</strong> Présentation (3 min) → Pratique (3 min)
+            → Débrief (1 min)
+          </p>
+
+          <div class="card mt-lg">
+            <h3>Anticiper les Zones à Risque avec l'IA</h3>
+            <p>
+              Avant de déployer une modification, une question revient
+              systématiquement : <strong>"Qu'est-ce qui peut casser ?"</strong>
+              L'analyse d'impact traditionnelle est manuelle, fastidieuse et
+              souvent incomplète.
+            </p>
+            <p class="mt-md">
+              L'IA peut analyser le graphe de dépendances de votre projet pour :
+            </p>
+            <ul class="mt-md">
+              <li>
+                <strong>Identifier les zones à risque</strong> : Quels tests
+                doivent absolument être relancés ?
+              </li>
+              <li>
+                <strong>Prioriser les tests</strong> : Tests critiques vs tests
+                secondaires
+              </li>
+              <li>
+                <strong>Suggérer de nouveaux tests</strong> : Cas non couverts
+                dans les zones modifiées
+              </li>
+            </ul>
+            <p class="mt-md">
+              <strong>💡 Cas d'usage concret :</strong> Vous modifiez une
+              méthode utilitaire partagée. Plutôt que de relancer TOUS les tests
+              (coûteux en temps), l'IA identifie les 15 tests vraiment impactés.
+            </p>
+          </div>
+
+          <!-- SCÉNARIO A -->
+          <div class="card success mt-lg">
+            <h4>A. Scénario 1 : Analyse d'Impact sur Modification de Code</h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Vous vous apprêtez à
+              modifier une méthode critique et voulez savoir quoi tester en
+              priorité.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">@workspace Je vais modifier la signature de la méthode `calculateNetworkSpeed()` dans main.js pour accepter un paramètre supplémentaire `unit` (Mbps ou Kbps). Analyse l'impact :
+1. Quels fichiers seront impactés ?
+2. Quels tests Cypress doivent absolument être mis à jour ?
+3. Y a-t-il des risques de régression dans le Controller Java ?
+4. Propose un ordre de modification pour minimiser les erreurs.</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>
+                    Scanner le workspace pour trouver tous les appels à
+                    <code>calculateNetworkSpeed()</code>
+                  </li>
+                  <li>
+                    Identifier les fichiers JavaScript, tests Cypress, templates
+                    Thymeleaf concernés
+                  </li>
+                  <li>
+                    Détecter si le Controller utilise cette valeur (via
+                    WebSocket, API, etc.)
+                  </li>
+                  <li>
+                    Proposer un plan de migration progressif (ex: paramètre
+                    optionnel d'abord)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCÉNARIO B -->
+          <div class="card success mt-lg">
+            <h4>B. Scénario 2 : Prédiction de Zones à Risque</h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Vous recevez une User
+              Story pour une nouvelle fonctionnalité et voulez savoir où
+              concentrer vos efforts de test.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">@workspace Nouvelle fonctionnalité : ajouter un mode "Économie d'énergie" qui désactive automatiquement certaines métriques si la batterie < 20%. Analyse :
+1. Quelles parties du code seront les plus à risque (complexité cyclomatique, couplage) ?
+2. Quels tests existants pourraient être réutilisés ?
+3. Quels nouveaux scénarios de test sont critiques ?
+4. Y a-t-il des edge cases non évidents liés à la batterie ?</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>
+                    Analyser le code existant lié à la batterie
+                    (<code>getBatteryStatus()</code>, validations, etc.)
+                  </li>
+                  <li>
+                    Identifier les zones complexes (nombreuses conditions,
+                    dépendances multiples)
+                  </li>
+                  <li>
+                    Lister les tests actuels sur la batterie qui peuvent servir
+                    de base
+                  </li>
+                  <li>
+                    Proposer des scénarios de test : batterie exactement à 20%,
+                    transitions 21%→19%, etc.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAUSE PRATIQUE -->
+          <div class="card warning mt-lg">
+            <h3>⏸️ PAUSE PRATIQUE (3 min)</h3>
+            <h4>🎯 À vous de jouer !</h4>
+            <p>Choisissez un scénario adapté à votre projet :</p>
+            <ol>
+              <li>
+                <strong>Option A - Impact d'une modification réelle :</strong>
+                <ul>
+                  <li>
+                    Identifiez une méthode que vous souhaitez modifier dans
+                    NavDash
+                  </li>
+                  <li>
+                    Utilisez le Prompt du Scénario A en remplaçant
+                    <code>calculateNetworkSpeed()</code> par votre méthode
+                  </li>
+                  <li>Notez les fichiers impactés identifiés par l'IA</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Option B - Nouvelle fonctionnalité :</strong>
+                <ul>
+                  <li>
+                    Imaginez une nouvelle fonctionnalité (ex: "mode sombre",
+                    "export PDF du diagnostic")
+                  </li>
+                  <li>
+                    Utilisez le Prompt du Scénario B pour obtenir une analyse de
+                    risque
+                  </li>
+                  <li>
+                    Comparez les zones identifiées par l'IA vs votre intuition
+                    initiale
+                  </li>
+                </ul>
+              </li>
+            </ol>
+
+            <div class="card info mt-md" style="background: #e3f2fd">
+              <h5>💡 Variante pour un Bug Fix</h5>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  margin-top: 0.5rem;
+                "
+              ><code style="color: #d4d4d4;">@workspace Je dois corriger le bug #142 : le formulaire n'est pas désactivé correctement quand viewport < 768px ET batterie < 10%. Analyse l'impact de ma correction sur les tests existants et identifie les cas limites à ajouter.</code></pre>
+            </div>
+          </div>
+
+          <!-- DÉBRIEF / SYNTHÈSE -->
+          <div class="card success mt-lg">
+            <h3>🎯 Débrief : Ce que vous venez de maîtriser</h3>
+
+            <h4 class="mt-lg">🔄 Méthodologie d'Analyse d'Impact avec l'IA</h4>
+
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+                margin-top: 1rem;
+              "
+            >
+              <div
+                style="
+                  background: #ffebee;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  border-left: 4px solid #f44336;
+                "
+              >
+                <h5>❌ Workflow Traditionnel</h5>
+                <ol style="font-size: 0.9em; margin-top: 0.5rem">
+                  <li>Modifier le code</li>
+                  <li>Relancer TOUS les tests (1h+)</li>
+                  <li>Espérer qu'on n'a rien cassé</li>
+                  <li>Débugger en production si oubli</li>
+                </ol>
+              </div>
+              <div
+                style="
+                  background: #e8f5e9;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  border-left: 4px solid #4caf50;
+                "
+              >
+                <h5>✅ Workflow avec l'IA</h5>
+                <ol style="font-size: 0.9em; margin-top: 0.5rem">
+                  <li>
+                    <strong>Analyser avant de coder</strong> : Comprendre
+                    l'impact
+                  </li>
+                  <li>
+                    <strong>Tester de manière ciblée</strong> : Focus sur les
+                    zones à risque (15 min)
+                  </li>
+                  <li>
+                    <strong>Anticiper les edge cases</strong> : Suggestions
+                    automatiques
+                  </li>
+                  <li>
+                    <strong>Migrer progressivement</strong> : Plan étape par
+                    étape
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <h4 class="mt-lg">✅ Bénéfices Concrets</h4>
+            <ul>
+              <li>
+                <strong>Gain de temps :</strong> Tests ciblés au lieu de tout
+                relancer (15 min vs 1h+)
+              </li>
+              <li>
+                <strong>Moins de régressions :</strong> Les dépendances cachées
+                sont détectées avant le merge
+              </li>
+              <li>
+                <strong>Meilleure couverture :</strong> Edge cases suggérés
+                automatiquement (transitions, valeurs limites)
+              </li>
+              <li>
+                <strong>Confiance accrue :</strong> Plan de migration validé
+                avant de coder une seule ligne
+              </li>
+            </ul>
+
+            <h4 class="mt-lg">🚀 Cas d'Usage Avancés</h4>
+            <table
+              style="width: 100%; border-collapse: collapse; margin-top: 0.5rem"
+            >
+              <thead>
+                <tr style="background: #f5f5f5">
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Situation
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Prompt Type
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Refactoring massif
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    "Je veux migrer de Axios vers Fetch API, quels fichiers sont
+                    impactés ?"
+                  </td>
+                </tr>
+                <tr style="background: #fafafa">
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Upgrade de dépendances
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    "Je passe de Spring Boot 2.7 à 3.0, quels breaking changes
+                    me concernent ?"
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Analyse de dette technique
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    "Quelles sont les 5 méthodes les plus couplées de mon projet
+                    ?"
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- MODULE 4.4 : GÉNÉRATION DE DOCUMENTATION -->
+        <section class="mt-xl">
+          <h2>
+            📝 Module 4.4 : Génération Automatique de Documentation (5 min)
+          </h2>
+          <p>
+            <strong>Workflow :</strong> Présentation (2 min) → Pratique (2 min)
+            → Débrief (1 min)
+          </p>
+
+          <div class="card mt-lg">
+            <h3>De la Documentation Toujours à Jour avec l'IA</h3>
+            <p>
+              La documentation est souvent le <strong>parent pauvre</strong> des
+              projets : obsolète dès qu'elle est écrite, incomplète, ou
+              inexistante. L'IA peut générer et maintenir automatiquement :
+            </p>
+            <ul class="mt-md">
+              <li>
+                <strong>Documentation de tests</strong> : Expliquer ce que fait
+                chaque test en langage naturel
+              </li>
+              <li>
+                <strong>Matrices de traçabilité</strong> : Lier User Stories →
+                Tests → Code
+              </li>
+              <li>
+                <strong>Guides de démarrage</strong> : README avec instructions
+                d'installation/exécution
+              </li>
+              <li>
+                <strong>Rapports d'exécution</strong> : Synthèse des résultats
+                de tests pour non-techniques
+              </li>
+            </ul>
+            <p class="mt-md">
+              <strong>💡 Problème résolu :</strong> Plus besoin de passer 2h à
+              documenter manuellement vos tests. L'IA lit le code et génère la
+              doc en quelques secondes.
+            </p>
+          </div>
+
+          <!-- SCÉNARIO A -->
+          <div class="card success mt-lg">
+            <h4>A. Scénario 1 : Documentation de Suite de Tests</h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Vous avez une suite de
+              tests Cypress mais aucune documentation pour les nouveaux QA.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">#networkAndBatteryValidation.cy.ts Génère une documentation complète de ce fichier de tests au format Markdown. Pour chaque test, explique :
+1. Objectif du test (en langage métier, non technique)
+2. Prérequis et setup
+3. Scénario étape par étape
+4. Critères de succès
+5. Liens avec les exigences du prd.md si applicable</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>
+                    Analyser chaque bloc <code>describe</code> et
+                    <code>it</code>
+                  </li>
+                  <li>
+                    Traduire les assertions techniques en langage clair (ex:
+                    <code
+                      >cy.get('[data-cy="battery"]').should('be.disabled')</code
+                    >
+                    → "Le champ batterie doit être désactivé")
+                  </li>
+                  <li>
+                    Identifier les <code>cy.stub()</code> et expliquer les
+                    simulations (ex: "Simule une batterie à 5%")
+                  </li>
+                  <li>
+                    Générer un document Markdown structuré et lisible par des
+                    non-développeurs
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- SCÉNARIO B -->
+          <div class="card success mt-lg">
+            <h4>B. Scénario 2 : Matrice de Traçabilité</h4>
+            <p>
+              <strong>Contexte pédagogique :</strong> Audit qualité à venir,
+              vous devez prouver que chaque exigence est testée.
+            </p>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <pre
+                style="
+                  background: #1e1e1e;
+                  padding: 1rem;
+                  border-radius: 4px;
+                  overflow-x: auto;
+                "
+              ><code style="color: #d4d4d4;">@workspace Génère une matrice de traçabilité entre :
+- Les exigences fonctionnelles du prd.md
+- Les fichiers de code source (main.js, DiagnosticController.java)
+- Les tests E2E (Cypress)
+
+Format : Tableau Markdown avec colonnes [ID Exigence | Exigence | Fichier Code | Tests | Couverture %]</code></pre>
+              <div class="card info mt-md" style="background: #e3f2fd">
+                <h5>🎯 Ce que l'IA va faire :</h5>
+                <ul>
+                  <li>
+                    Extraire les exigences du prd.md (ex: "Désactiver le
+                    formulaire si batterie < 10%")
+                  </li>
+                  <li>
+                    Rechercher les implémentations dans le code (méthodes,
+                    conditions)
+                  </li>
+                  <li>
+                    Identifier les tests qui valident chaque exigence
+                    (assertions Cypress)
+                  </li>
+                  <li>
+                    Calculer une estimation de couverture fonctionnelle (% des
+                    exigences testées)
+                  </li>
+                  <li>
+                    Mettre en évidence les exigences non testées ou
+                    partiellement couvertes
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- PAUSE PRATIQUE -->
+          <div class="card warning mt-lg">
+            <h3>⏸️ PAUSE PRATIQUE (2 min)</h3>
+            <h4>🎯 À vous de jouer !</h4>
+            <p>Choisissez un scénario rapide :</p>
+            <ol>
+              <li>
+                <strong>Option A - Documentation de tests :</strong>
+                <ul>
+                  <li>
+                    Sélectionnez un fichier de test Cypress (ex:
+                    <code>networkAndBatteryValidation.cy.ts</code>)
+                  </li>
+                  <li>Exécutez le Prompt du Scénario A</li>
+                  <li>
+                    Sauvegardez le résultat dans
+                    <code>docs/tests/network-battery-tests.md</code>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Option B - README automatique :</strong>
+                <ul>
+                  <li>Utilisez ce prompt simplifié :</li>
+                </ul>
+                <pre
+                  style="
+                    background: #1e1e1e;
+                    padding: 1rem;
+                    border-radius: 4px;
+                    margin-top: 0.5rem;
+                  "
+                ><code style="color: #d4d4d4;">@workspace Génère un README.md pour le projet NavDash avec :
+- Description du projet
+- Prérequis (Java, Node.js, versions)
+- Installation (commandes Maven, npm)
+- Lancement (serveur + tests)
+- Structure du projet</code></pre>
+              </li>
+            </ol>
+          </div>
+
+          <!-- DÉBRIEF / SYNTHÈSE -->
+          <div class="card success mt-lg">
+            <h3>🎯 Débrief : Ce que vous venez de maîtriser</h3>
+
+            <h4 class="mt-lg">
+              📚 Types de Documentation Générables avec l'IA
+            </h4>
+            <table
+              style="width: 100%; border-collapse: collapse; margin-top: 1rem"
+            >
+              <thead>
+                <tr style="background: #f5f5f5">
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Type
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Prompt Clé
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Utilité
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Doc de tests</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>#test.cy.ts Génère la doc Markdown</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Onboarding nouveaux QA
+                  </td>
+                </tr>
+                <tr style="background: #fafafa">
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>README</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>@workspace Génère README.md</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Installation/démarrage projet
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Matrice de traçabilité</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>@workspace Lien exigences ↔ tests</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Audits qualité, conformité
+                  </td>
+                </tr>
+                <tr style="background: #fafafa">
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Rapport de tests</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <code>@terminal Résume les résultats de tests</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Communication avec PO/management
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4 class="mt-lg">✅ Bénéfices Clés</h4>
+            <ul>
+              <li>
+                <strong>Gain de temps massif :</strong> 2h de rédaction manuelle
+                → 30 secondes de génération
+              </li>
+              <li>
+                <strong>Toujours à jour :</strong> Régénérez la doc après chaque
+                modification majeure (aucun risque d'obsolescence)
+              </li>
+              <li>
+                <strong>Accessible aux non-techniques :</strong> Langage métier,
+                pas de jargon technique
+              </li>
+              <li>
+                <strong>Conformité facilitée :</strong> Matrices de traçabilité
+                pour audits ISO/FDA/SOC2
+              </li>
+            </ul>
+
+            <h4 class="mt-lg">💡 Bonnes Pratiques</h4>
+            <ul>
+              <li>
+                <strong>Régénérez régulièrement :</strong> Après chaque
+                sprint/release pour maintenir la cohérence
+              </li>
+              <li>
+                <strong>Relisez et ajustez :</strong> L'IA peut halluciner sur
+                les détails métier spécifiques
+              </li>
+              <li>
+                <strong>Versionnez dans Git :</strong> Gardez l'historique de
+                votre documentation
+              </li>
+              <li>
+                <strong>Combinez avec vos templates :</strong> Ajoutez logos,
+                en-têtes d'entreprise, disclaimers
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Module 4.5 : Collaboration & Bonnes Pratiques d'Équipe -->
+        <section class="card success mt-xl">
+          <div class="card-header">
+            <h2>Module 4.5 : Collaboration & Bonnes Pratiques d'Équipe</h2>
+            <p class="duration">⏱️ Durée : 5 minutes</p>
+          </div>
+
+          <div class="card-body">
+            <h3>📚 Introduction : Vers une Culture IA Partagée</h3>
+            <p>
+              GitHub Copilot devient encore plus puissant quand toute l'équipe
+              QA adopte des <strong>pratiques communes</strong> :
+            </p>
+            <ul>
+              <li>
+                <strong>Bibliothèque de prompts partagée</strong> dans le wiki
+                ou Confluence
+              </li>
+              <li>
+                <strong>Conventions de nommage</strong> pour les tests et
+                fichiers de config
+              </li>
+              <li>
+                <strong>Revues de code augmentées</strong> avec GitHub Copilot
+                en support
+              </li>
+              <li>
+                <strong>Partage d'expérience</strong> lors des rétrospectives
+                ("Prompt du mois", astuces)
+              </li>
+            </ul>
+            <p>
+              Cette section présente deux cas d'usage concrets pour
+              <em>standardiser et amplifier</em> l'impact de l'IA dans votre
+              équipe.
+            </p>
+
+            <!-- Scénario A : Revue de Code Assistée -->
+            <h3 class="mt-lg">
+              💼 Scénario A : Revue de Code Assistée par l'IA
+            </h3>
+            <p>
+              <strong>Contexte :</strong> Vous êtes en charge de relire une pull
+              request contenant 3 nouveaux tests E2E. Vous voulez vérifier la
+              <em>sécurité</em>, la <em>performance</em>, et la
+              <em>conformité</em> aux standards de l'équipe, sans passer 1h à
+              tout analyser manuellement.
+            </p>
+
+            <button
+              class="collapsible-btn"
+              onclick="toggleCollapsible(this)"
+              aria-expanded="false"
+            >
+              <span class="icon">▶</span> Voir le Prompt de Revue de Code
+              Standardisé
+            </button>
+            <div class="collapsible-content">
+              <button
+                onclick="copyPrompt(this)"
+                style="
+                  float: right;
+                  padding: 0.5rem 1rem;
+                  background: #2196f3;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  font-size: 0.9rem;
+                "
+              >
+                📋 Copier le Prompt
+              </button>
+              <pre><code>@workspace Analyse cette Pull Request (#file PR-123) selon nos standards d'équipe :
+
+1. Sécurité :
+   - Vérifier qu'aucun secret (clé API, token) n'est hardcodé
+   - Valider l'utilisation de cy.session() pour éviter les réauthentifications multiples
+   - Identifier les risques XSS/injection SQL dans les selectors
+
+2. Performance :
+   - Repérer les cy.wait(ms) inutiles (remplaçables par cy.intercept())
+   - Vérifier que les tests n'appellent pas 2x la même API REST
+   - Identifier les sélecteurs CSS trop génériques (risque de lenteur)
+
+3. Conformité :
+   - Les tests suivent-ils le pattern Arrange-Act-Assert ?
+   - Les noms de fichiers respectent-ils la convention : feature-action.cy.ts ?
+   - Les data-testid sont-ils utilisés au lieu de classes CSS fragiles ?
+
+4. Maintenabilité :
+   - Y a-t-il du code dupliqué extractable dans un custom command ?
+   - Les constantes sont-elles bien externalisées dans fixtures/ ?
+
+Fournis un rapport Markdown avec sections ✅ (conforme) / ⚠️ (à corriger) / 🔴 (bloquant).</code></pre>
+            </div>
+
+            <h4 class="mt-md">🤖 Ce que l'IA va faire :</h4>
+            <ul>
+              <li>
+                Analyser tous les fichiers de la PR (tests, fixtures, configs)
+              </li>
+              <li>
+                Appliquer <strong>vos critères internes</strong> (pas juste des
+                règles génériques)
+              </li>
+              <li>
+                Générer un rapport Markdown structuré avec emojis pour un scan
+                visuel rapide
+              </li>
+              <li>
+                Identifier les bloquants (ex: hardcoded password) vs. les nice
+                to have (ex: renommer une variable)
+              </li>
+            </ul>
+
+            <blockquote class="mt-md">
+              <strong>💡 Astuce :</strong> Créez un fichier
+              <code>.github/copilot-review-template.md</code> contenant vos
+              critères. Référencez-le avec <code>#file</code> dans chaque revue
+              pour garantir la cohérence.
+            </blockquote>
+
+            <!-- Scénario B : Template de Prompt Réutilisable -->
+            <h3 class="mt-lg">
+              💼 Scénario B : Créer un Template de Prompt Réutilisable
+            </h3>
+            <p>
+              <strong>Contexte :</strong> Votre équipe écrit souvent des tests
+              API REST similaires (GET, POST, PUT, DELETE sur différentes
+              entités). Pour éviter de répéter le même prompt à chaque fois,
+              vous créez un <em>template paramétrable</em>.
+            </p>
+
+            <button
+              class="collapsible-btn"
+              onclick="toggleCollapsible(this)"
+              aria-expanded="false"
+            >
+              <span class="icon">▶</span> Voir le Template de Prompt CRUD API
+            </button>
+            <div class="collapsible-content">
+              <button
+                onclick="copyPrompt(this)"
+                style="
+                  float: right;
+                  padding: 0.5rem 1rem;
+                  background: #2196f3;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  font-size: 0.9rem;
+                "
+              >
+                📋 Copier le Template
+              </button>
+              <pre><code>@workspace Génère une suite de tests Cypress pour l'entité [ENTITY_NAME] :
+
+Endpoints à tester :
+- GET    /api/[ENTITY_PLURAL]       (liste paginée, filtres query params)
+- GET    /api/[ENTITY_PLURAL]/{id}  (détail)
+- POST   /api/[ENTITY_PLURAL]       (création)
+- PUT    /api/[ENTITY_PLURAL]/{id}  (mise à jour complète)
+- DELETE /api/[ENTITY_PLURAL]/{id}  (suppression)
+
+Critères :
+1. Utiliser cy.intercept() pour mocker les réponses (fixtures dans fixtures/[ENTITY_NAME]/)
+2. Valider les codes HTTP (200, 201, 204, 400, 404, 500)
+3. Tester les cas limites (token expiré, ID inexistant, payload invalide)
+4. Générer un fichier : e2e/api/[ENTITY_NAME]-crud.cy.ts
+5. Ajouter un custom command : cy.create[ENTITY_NAME]() pour les autres tests
+
+Schema JSON de l'entité :
+```json
+[PASTE_ENTITY_JSON_HERE]
+```
+
+Exemple d'utilisation attendue :
+cy.create[ENTITY_NAME]({ name: 'Test Item' })
+  .then((id) => cy.get[ENTITY_NAME](id))
+  .should('have.property', 'name', 'Test Item');</code></pre>
+            </div>
+
+            <h4 class="mt-md">🤖 Comment utiliser ce template :</h4>
+            <ol>
+              <li>
+                Copiez le template dans
+                <code>docs/prompts/api-crud-template.md</code>
+              </li>
+              <li>
+                Remplacez <code>[ENTITY_NAME]</code> par <code>Product</code>,
+                <code>User</code>, <code>Order</code>, etc.
+              </li>
+              <li>
+                Remplacez <code>[ENTITY_PLURAL]</code> par
+                <code>products</code>, <code>users</code>, <code>orders</code>
+              </li>
+              <li>
+                Collez le schéma JSON de votre entité (depuis Swagger ou backend
+                model)
+              </li>
+              <li>
+                Exécutez dans GitHub Copilot Chat → vous obtenez une suite
+                complète en 30 secondes
+              </li>
+            </ol>
+
+            <blockquote class="mt-md">
+              <strong>💡 Résultat :</strong> En 3 mois, une équipe de 4 QAs a
+              créé 25 templates couvrant 90% de leurs cas d'usage (API, UI,
+              perf, accessibilité). Temps moyen d'écriture d'un nouveau test
+              passé de 45 min à 5 min.
+            </blockquote>
+
+            <!-- Pause Pratique -->
+            <div class="pause-pratique mt-lg">
+              <h3>⏸️ Pause Pratique — Votre Choix (2 min)</h3>
+              <p>Testez l'un des deux cas d'usage :</p>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 1rem;
+                  margin-top: 1rem;
+                "
+              >
+                <div class="card" style="padding: 1rem">
+                  <h4>Option A : Revue de Code Rapide</h4>
+                  <p>Prenez une PR récente de votre projet :</p>
+                  <ul style="margin: 0.5rem 0; font-size: 0.9rem">
+                    <li>Collez le prompt de revue dans GitHub Copilot Chat</li>
+                    <li>Référencez les fichiers de la PR avec #file</li>
+                    <li>
+                      Comparez le rapport IA avec votre relecture manuelle
+                    </li>
+                  </ul>
+                </div>
+                <div class="card" style="padding: 1rem">
+                  <h4>Option B : Créer un Template</h4>
+                  <p>Créez un template pour un cas récurrent :</p>
+                  <ul style="margin: 0.5rem 0; font-size: 0.9rem">
+                    <li>Identifiez un type de test que vous écrivez souvent</li>
+                    <li>
+                      Rédigez un template avec des placeholders [ENTITY_NAME]
+                    </li>
+                    <li>Testez-le sur 2 entités différentes de NavDash</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Débrief -->
+            <h3 class="mt-lg">🎯 Débrief : Bonnes Pratiques d'Équipe</h3>
+
+            <h4>📖 Les 4 Piliers d'une Équipe QA + IA Efficace</h4>
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 1rem;
+                font-size: 0.95rem;
+              "
+            >
+              <thead>
+                <tr style="background: #f5f5f5">
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Pilier
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Action Concrète
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Outil Recommandé
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>1. Bibliothèque de Prompts</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Créez un repo Git
+                    <code>qa-prompts-library/</code> avec des templates
+                    catégorisés
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    GitHub Wiki, Notion, ou dossier
+                    <code>docs/prompts/</code>
+                  </td>
+                </tr>
+                <tr style="background: #fafafa">
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>2. Conventions de Nommage</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Documentez les patterns attendus :
+                    <code>feature-action.cy.ts</code>,
+                    <code>data-testid="btn-submit"</code>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Fichier <code>CONVENTIONS.md</code> à la racine + linter
+                    ESLint
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>3. Revues Augmentées</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Chaque PR contient un rapport IA (sécurité, perf,
+                    maintenabilité)
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Template dans
+                    <code>.github/copilot-review-template.md</code>
+                  </td>
+                </tr>
+                <tr style="background: #fafafa">
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>4. Partage d'Expérience</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Rétrospective mensuelle : "Prompt du Mois", nouveaux
+                    use-cases, pièges à éviter
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    Slack/Teams + vidéo démo 5 min par QA
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4 class="mt-lg">✅ Bénéfices Mesurables</h4>
+            <ul>
+              <li>
+                <strong>Temps de formation divisé par 3 :</strong> Les nouveaux
+                QAs réutilisent les templates existants au lieu de partir de
+                zéro
+              </li>
+              <li>
+                <strong>Qualité homogène :</strong> Tous les tests suivent les
+                mêmes standards (nommage, structure, sécurité)
+              </li>
+              <li>
+                <strong>Innovation continue :</strong> Chaque QA apporte ses
+                trouvailles → la bibliothèque s'enrichit organiquement
+              </li>
+              <li>
+                <strong>ROI prouvé :</strong> Une équipe a documenté +70% de
+                gain de temps sur les tâches récurrentes (tests CRUD, revues de
+                code)
+              </li>
+            </ul>
+
+            <h4 class="mt-lg">💡 Pour Aller Plus Loin</h4>
+            <ul>
+              <li>
+                <strong>Créez un "Prompt Champion" :</strong> Désignez un QA
+                référent IA qui centralise les bonnes pratiques et répond aux
+                questions
+              </li>
+              <li>
+                <strong>Automatisez la revue :</strong> Intégrez GitHub Actions
+                pour exécuter automatiquement le prompt de revue sur chaque PR
+              </li>
+              <li>
+                <strong>Mesurez l'impact :</strong> Trackez le temps gagné par
+                semaine (avant/après adoption IA) pour justifier
+                l'investissement
+              </li>
+              <li>
+                <strong>Partagez avec d'autres équipes :</strong> Votre
+                bibliothèque de prompts peut inspirer les devs, les PO, les SRE
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Module 4.6 : Perspectives Futures — Agents Autonomes, Auto-Healing Tests -->
+        <section class="card success mt-xl">
+          <div class="card-header">
+            <h2>
+              Module 4.6 : Perspectives Futures — Agents Autonomes, Auto-Healing
+              Tests
+            </h2>
+            <p class="duration">⏱️ Durée : 5 minutes</p>
+          </div>
+
+          <div class="card-body">
+            <h3>🔮 Introduction : Vers le QA Autonome</h3>
+            <p>
+              En janvier 2026, GitHub Copilot et les outils d'IA générative ont
+              déjà transformé le métier de QA. Mais ce n'est que le
+              <strong>début</strong>. Voici les tendances qui vont redéfinir le
+              testing dans les 12-24 prochains mois :
+            </p>
+            <ul>
+              <li>
+                <strong>Agents autonomes :</strong> Des workflows multi-étapes
+                (analyse → génération → exécution → correction) orchestrés par
+                l'IA sans intervention humaine
+              </li>
+              <li>
+                <strong>Auto-healing tests :</strong> Tests qui se réparent
+                automatiquement quand l'interface évolue (fini les sélecteurs
+                cassés)
+              </li>
+              <li>
+                <strong>Test impact prediction :</strong> L'IA prédit quels
+                tests exécuter en fonction des changements de code (réduction de
+                90% du temps CI)
+              </li>
+              <li>
+                <strong>Natural Language Testing :</strong> Écrire des tests en
+                français pur → l'IA génère le code Cypress correspondant
+              </li>
+            </ul>
+            <p>
+              Cette section explore <em>ce qui est déjà possible</em> (avec de
+              l'orchestration) et <em>ce qui arrive bientôt</em>, pour vous
+              préparer à l'avenir du métier.
+            </p>
+
+            <!-- Scénario A : Agent Autonome de Tests E2E -->
+            <h3 class="mt-lg">🤖 Scénario A : Agent Autonome de Tests E2E</h3>
+            <p>
+              <strong>Contexte :</strong> Vous venez de fusionner une PR qui
+              ajoute une nouvelle fonctionnalité (ex: filtre de recherche dans
+              NavDash). Vous voulez que l'IA génère, exécute, et corrige les
+              tests automatiquement, sans intervention.
+            </p>
+            <p>
+              <strong>Statut actuel (2026) :</strong> Partiellement possible
+              avec orchestration manuelle (vous lancez chaque étape
+              successivement). <strong>Statut futur (2027) :</strong> Workflow
+              end-to-end en une seule commande.
+            </p>
+
+            <button
+              class="collapsible-btn"
+              onclick="toggleCollapsible(this)"
+              aria-expanded="false"
+            >
+              <span class="icon">▶</span> Voir le Prompt d'Agent Autonome
+              (Version 2026)
+            </button>
+            <div class="collapsible-content">
+              <button
+                onclick="copyPrompt(this)"
+                style="
+                  float: right;
+                  padding: 0.5rem 1rem;
+                  background: #2196f3;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  font-size: 0.9rem;
+                "
+              >
+                📋 Copier le Prompt
+              </button>
+              <pre><code>@workspace Je veux créer un workflow de test autonome pour la nouvelle fonctionnalité de filtre de recherche.
+
+Étape 1 : ANALYSE
+- Identifie les fichiers modifiés dans la dernière PR (#file src/components/SearchFilter.tsx)
+- Liste les endpoints API appelés (GET /api/vessels/search)
+- Détecte les nouveaux éléments UI (data-testid="filter-input", boutons, dropdowns)
+
+Étape 2 : GÉNÉRATION DE TESTS
+- Crée un fichier e2e/search-filter.cy.ts avec :
+  * Test de recherche basique (saisie texte → résultats filtrés)
+  * Test de recherche vide (aucun résultat trouvé)
+  * Test de combinaison de filtres (texte + catégorie)
+  * Test de performance (temps de réponse < 500ms)
+- Utilise cy.intercept() pour mocker l'API avec fixtures/search-results.json
+
+Étape 3 : EXÉCUTION
+- Génère le script npm pour exécuter ces tests : npm run cy:run -- --spec "e2e/search-filter.cy.ts"
+- Fournis la commande complète que je peux copier-coller dans @terminal
+
+Étape 4 : AUTO-CORRECTION (si échecs)
+- Si des tests échouent, analyse les logs Cypress
+- Identifie la cause (sélecteur incorrect, timing, assertion fausse)
+- Propose une version corrigée du test
+- Itère jusqu'à 100% de réussite
+
+Fournis un rapport final Markdown avec :
+- ✅ Nombre de tests générés
+- ⏱️ Temps d'exécution total
+- 🐛 Problèmes détectés et corrigés
+- 📊 Couverture de la fonctionnalité (% des cas d'usage testés)</code></pre>
+            </div>
+
+            <h4 class="mt-md">
+              🤖 Ce que l'IA va faire (avec votre aide en 2026) :
+            </h4>
+            <ol>
+              <li>
+                <strong>Analyse :</strong> Parcourt @workspace pour comprendre
+                la nouvelle fonctionnalité (code, API, UI)
+              </li>
+              <li>
+                <strong>Génération :</strong> Crée 4-5 tests couvrant les
+                scénarios principaux + edge cases
+              </li>
+              <li>
+                <strong>Exécution :</strong> Vous fournit la commande à lancer
+                dans @terminal (vous l'exécutez manuellement)
+              </li>
+              <li>
+                <strong>Auto-correction :</strong> Si échecs, vous relancez un
+                prompt avec les logs → l'IA corrige → vous ré-exécutez
+              </li>
+            </ol>
+
+            <blockquote class="mt-md">
+              <strong>🔮 Vision 2027 :</strong> Ce workflow sera entièrement
+              automatisé via GitHub Actions. Chaque PR déclenchera un agent qui
+              génère, exécute, et corrige les tests, puis poste un rapport dans
+              les commentaires de la PR. Vous ne ferez qu'approuver ou rejeter.
+            </blockquote>
+
+            <!-- Scénario B : Auto-Healing Tests -->
+            <h3 class="mt-lg">🩹 Scénario B : Auto-Healing Tests</h3>
+            <p>
+              <strong>Contexte :</strong> Votre équipe frontend a refactorisé
+              l'UI de NavDash. Résultat : 30 tests Cypress échouent à cause de
+              sélecteurs CSS obsolètes (<code>.btn-primary</code> →
+              <code>.button-primary</code>). Plutôt que de corriger
+              manuellement, vous voulez que l'IA détecte et répare
+              automatiquement.
+            </p>
+
+            <button
+              class="collapsible-btn"
+              onclick="toggleCollapsible(this)"
+              aria-expanded="false"
+            >
+              <span class="icon">▶</span> Voir le Prompt d'Auto-Healing
+            </button>
+            <div class="collapsible-content">
+              <button
+                onclick="copyPrompt(this)"
+                style="
+                  float: right;
+                  padding: 0.5rem 1rem;
+                  background: #2196f3;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  font-size: 0.9rem;
+                "
+              >
+                📋 Copier le Prompt
+              </button>
+              <pre><code>@workspace Analyse les tests Cypress qui échouent dans @terminal (dernière exécution) :
+
+Étape 1 : DÉTECTION DES SÉLECTEURS CASSÉS
+- Extrait tous les messages d'erreur contenant "Timed out retrying" ou "element not found"
+- Liste les sélecteurs défaillants (ex: cy.get('.btn-primary'), cy.contains('Valider'))
+
+Étape 2 : ANALYSE DU NOUVEAU DOM
+- Compare avec le code actuel dans #file src/components/ (version post-refacto)
+- Identifie les nouveaux sélecteurs équivalents :
+  * Classes CSS renommées (.btn-primary → .button-primary)
+  * data-testid ajoutés (privilégier ces attributs)
+  * Modifications de texte ("Valider" → "Confirmer")
+
+Étape 3 : PROPOSITION DE CORRECTIONS
+- Pour chaque test cassé, génère la version corrigée avec :
+  * Sélecteurs robustes (data-testid en priorité)
+  * Fallback sur aria-label si data-testid absent
+  * Éviter les sélecteurs CSS fragiles
+
+Étape 4 : GÉNÉRATION DU PATCH
+- Fournis un fichier de diff (ou plusieurs replace_string_in_file) que je peux appliquer directement
+- Exemple :
+  Ancien : cy.get('.btn-primary').click()
+  Nouveau : cy.get('[data-testid="submit-btn"]').click()
+
+Étape 5 : VALIDATION
+- Après application du patch, suggère un re-run des tests
+- Si encore des échecs, itère l'analyse (peut-être un problème de timing, pas de sélecteur)
+
+Fournis un tableau récapitulatif :
+| Test Cassé | Sélecteur Ancien | Sélecteur Nouveau | Confiance |
+|------------|------------------|-------------------|-----------|</code></pre>
+            </div>
+
+            <h4 class="mt-md">🤖 Ce que l'IA va faire :</h4>
+            <ul>
+              <li>
+                <strong>Diagnostic précis :</strong> Compare les erreurs Cypress
+                avec le DOM actuel pour trouver les correspondances
+              </li>
+              <li>
+                <strong>Sélecteurs intelligents :</strong> Privilégie
+                data-testid, aria-label, et évite les classes CSS volatiles
+              </li>
+              <li>
+                <strong>Patch automatique :</strong> Génère les corrections
+                prêtes à appliquer (vous validez avant commit)
+              </li>
+              <li>
+                <strong>Apprentissage :</strong> Si vous documentez les patterns
+                de refacto, l'IA sera plus précise la prochaine fois
+              </li>
+            </ul>
+
+            <blockquote class="mt-md">
+              <strong>🔮 Vision 2027 :</strong> Les outils comme Playwright et
+              Cypress intégreront l'auto-healing nativement. Si un test échoue
+              3x de suite pour la même raison (sélecteur cassé), l'outil
+              proposera automatiquement un fix dans la CI. Les QAs ne feront
+              qu'approuver.
+            </blockquote>
+
+            <!-- Pause Pratique -->
+            <div class="pause-pratique mt-lg">
+              <h3>⏸️ Pause Pratique — Imaginez le Workflow Futur (2 min)</h3>
+              <p>Choisissez un exercice de prospective :</p>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  gap: 1rem;
+                  margin-top: 1rem;
+                "
+              >
+                <div class="card" style="padding: 1rem">
+                  <h4>Option A : Agent de Test Complet</h4>
+                  <p>Concevez un agent autonome pour NavDash :</p>
+                  <ul style="margin: 0.5rem 0; font-size: 0.9rem">
+                    <li>
+                      Listez les 5 étapes clés (analyse, génération, exécution,
+                      etc.)
+                    </li>
+                    <li>
+                      Identifiez ce que vous pouvez déjà automatiser aujourd'hui
+                    </li>
+                    <li>
+                      Notez ce qui nécessite encore votre intervention manuelle
+                    </li>
+                  </ul>
+                </div>
+                <div class="card" style="padding: 1rem">
+                  <h4>Option B : Auto-Healing Candidates</h4>
+                  <p>Identifiez 3 tests fragiles actuels :</p>
+                  <ul style="margin: 0.5rem 0; font-size: 0.9rem">
+                    <li>
+                      Tests qui cassent souvent après refacto UI (sélecteurs
+                      CSS)
+                    </li>
+                    <li>Imaginez comment l'auto-healing les aurait réparés</li>
+                    <li>
+                      Proposez des sélecteurs robustes (data-testid) pour les
+                      protéger
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Débrief -->
+            <h3 class="mt-lg">🎯 Débrief : L'Avenir du QA en 3 Horizons</h3>
+
+            <h4>📅 Timeline de l'Évolution IA dans le QA</h4>
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 1rem;
+                font-size: 0.95rem;
+              "
+            >
+              <thead>
+                <tr style="background: #f5f5f5">
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Horizon
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Capacités Disponibles
+                  </th>
+                  <th
+                    style="
+                      padding: 0.75rem;
+                      text-align: left;
+                      border: 1px solid #ddd;
+                    "
+                  >
+                    Rôle du QA
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Aujourd'hui (2026)</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    ✅ Génération de tests par prompt<br />
+                    ✅ Analyse de contexte (@workspace, #file)<br />
+                    ✅ Mutation testing assisté<br />
+                    🔶 Auto-healing (avec orchestration manuelle)
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Stratège + Superviseur</strong> : Vous concevez les
+                    prompts, validez les tests, orchestrez les workflows
+                  </td>
+                </tr>
+                <tr style="background: #fafafa">
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Horizon 1 (2027)</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    ✅ Agents autonomes end-to-end (CI intégrée)<br />
+                    ✅ Auto-healing natif (Cypress/Playwright)<br />
+                    ✅ Test impact prediction (ML sur historique Git)<br />
+                    ✅ Natural Language Testing (français → Cypress)
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Architecte Qualité</strong> : Vous définissez la
+                    stratégie de tests, l'IA exécute et auto-corrige
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Horizon 2 (2028+)</strong>
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    ✅ Tests génératifs (l'IA invente des scénarios que vous
+                    n'aviez pas imaginés)<br />
+                    ✅ Prédiction de bugs (analyse statique + ML → "Ce code a
+                    90% de risque de bug")<br />
+                    ✅ Auto-optimisation de la CI (suppression automatique des
+                    tests redondants)
+                  </td>
+                  <td style="padding: 0.75rem; border: 1px solid #ddd">
+                    <strong>Quality Advisor</strong> : Vous arbitrez les
+                    décisions stratégiques (trade-offs risque/coût), l'IA gère
+                    l'opérationnel
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h4 class="mt-lg">✅ Opportunités</h4>
+            <ul>
+              <li>
+                <strong>Productivité x10 :</strong> Ce qui prenait 1 semaine
+                (écrire 100 tests) prendra 1 journée (superviser l'agent)
+              </li>
+              <li>
+                <strong>Qualité augmentée :</strong> L'IA teste des edge cases
+                que les humains oublient (ex: timezone UTC+14, caractères
+                Unicode rares)
+              </li>
+              <li>
+                <strong>Maintenance réduite :</strong> Auto-healing = fin des
+                "test suite broken after UI refactoring"
+              </li>
+              <li>
+                <strong>Montée en compétences :</strong> Les QAs deviennent des
+                experts en architecture de tests, pas en écriture manuelle
+              </li>
+            </ul>
+
+            <h4 class="mt-lg">⚠️ Défis à Anticiper</h4>
+            <ul>
+              <li>
+                <strong>Confiance :</strong> Comment valider qu'un test généré
+                par l'IA est correct ? (Besoin de revues, de benchmarks)
+              </li>
+              <li>
+                <strong>Debuggabilité :</strong> Si un agent autonome échoue, le
+                log sera complexe (multiples itérations IA)
+              </li>
+              <li>
+                <strong>Coût :</strong> Les tokens API pour orchestrer un agent
+                end-to-end coûtent cher (besoin de cache intelligent)
+              </li>
+              <li>
+                <strong>Sur-dépendance :</strong> Risque de perdre les
+                compétences fondamentales si tout est délégué à l'IA
+              </li>
+            </ul>
+
+            <h4 class="mt-lg">
+              🚀 Action Immédiate : Préparez Votre Équipe Dès Maintenant
+            </h4>
+            <ol>
+              <li>
+                <strong>Formez-vous au prompt engineering avancé :</strong>
+                Maîtrisez @workspace, #file, et les prompts multi-étapes (cette
+                formation !)
+              </li>
+              <li>
+                <strong>Adoptez les data-testid partout :</strong> C'est la
+                fondation de l'auto-healing futur (exit les sélecteurs CSS)
+              </li>
+              <li>
+                <strong>Documentez vos workflows :</strong> Créez un wiki avec
+                vos processus de test → l'IA les orchestrera automatiquement
+                demain
+              </li>
+              <li>
+                <strong>Expérimentez avec des agents simples :</strong> Créez un
+                script qui enchaîne 3 prompts Copilot (analyse → génération →
+                exécution)
+              </li>
+              <li>
+                <strong>Partagez vos découvertes :</strong> Devenez le "Prompt
+                Champion" de votre équipe, organisez des démos mensuelles
+              </li>
+            </ol>
+
+            <h3 class="mt-xl">🎓 Conclusion : Le QA de Demain</h3>
+            <div
+              class="card"
+              style="
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                color: white;
+                padding: 2rem;
+                margin-top: 2rem;
+              "
+            >
+              <h4 style="margin-top: 0; color: white">
+                🌟 L'Humain au Cœur de la Qualité
+              </h4>
+              <p style="font-size: 1.05rem; line-height: 1.7">
+                Même avec des agents autonomes et des tests auto-réparables,
+                <strong>le QA humain reste indispensable</strong> :
+              </p>
+              <ul style="font-size: 1rem; line-height: 1.7">
+                <li>
+                  <strong>Stratégie :</strong> Définir
+                  <em>ce qu'il faut tester</em> (l'IA ne connaît pas vos
+                  priorités métier)
+                </li>
+                <li>
+                  <strong>Créativité :</strong> Imaginer des scénarios adverses
+                  que l'IA n'anticipe pas (ex: utilisateur malveillant)
+                </li>
+                <li>
+                  <strong>Contexte :</strong> Comprendre les subtilités métier
+                  (ex: "Ce bug est acceptable en B2C, bloquant en B2B")
+                </li>
+                <li>
+                  <strong>Éthique :</strong> Garantir que les tests ne biaisent
+                  pas contre certains utilisateurs (accessibilité, inclusion)
+                </li>
+              </ul>
+              <p
+                style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0"
+              >
+                🚀 <strong>Votre mission :</strong> Devenir un
+                <em>architecte qualité augmenté par l'IA</em>, pas un simple
+                exécutant. Commencez petit, itérez, et partagez vos découvertes.
+                L'avenir du QA se construit aujourd'hui.
+              </p>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem">
+              <p style="font-size: 1.2rem; font-weight: bold">
+                🎉 Félicitations ! Vous avez terminé la Section 4.
+              </p>
+              <p style="font-size: 1rem; color: #666">
+                Vous maîtrisez maintenant les cas d'usage avancés de GitHub
+                Copilot pour le QA.<br />
+                Retournez à l'accueil pour explorer les autres sections ou
+                mettre en pratique vos nouvelles compétences.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- NAVIGATION -->
+        <div class="navigation mt-xl">
+          <a href="../section-3/index.html" class="btn-secondary"
+            >← Section 3</a
+          >
+          <a href="../index.html" class="btn-primary">Retour à l'Accueil</a>
         </div>
       </div>
     </main>
 
     <footer>
-      <div class="container">
-        <p>📚 Formation QA & IA Générative | Section 4 - Pouvoirs Avancés</p>
-        <p><small>⏱️ Durée : 30 min | Niveau : Avancé</small></p>
-      </div>
+      <p>Formation GitHub Copilot pour QA - Section 4/4</p>
+      <p>🎓 Masterclass Prompt Engineering</p>
     </footer>
+
+    <script>
+      function toggleCollapsible(button) {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        content.classList.toggle("active");
+      }
+
+      function copyPrompt(button) {
+        const promptContainer = button.closest(".collapsible-content");
+        const clone = promptContainer.cloneNode(true);
+        const copyBtn = clone.querySelector("button");
+        if (copyBtn) copyBtn.remove();
+        let fullPrompt = clone.innerText.trim();
+
+        navigator.clipboard
+          .writeText(fullPrompt)
+          .then(() => {
+            const originalText = button.innerHTML;
+            button.innerHTML = "✅ Copié !";
+            button.style.background = "#4caf50";
+
+            setTimeout(() => {
+              button.innerHTML = originalText;
+              button.style.background = "#2196f3";
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error("Erreur de copie:", err);
+            alert("Erreur lors de la copie. Utilisez Ctrl+C manuellement.");
+          });
+      }
+    </script>
   </body>
 </html>

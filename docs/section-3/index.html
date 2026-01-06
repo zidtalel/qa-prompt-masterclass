@@ -46,44 +46,6 @@
           </p>
           <div class="objectives-list">
             <div class="objective-item">
-              <span class="objective-icon">💻</span>
-              <div class="objective-content">
-                <strong>GitHub Copilot dans l'IDE</strong> — Utiliser Copilot
-                pour générer des tests, du code et des fixtures directement dans
-                votre environnement
-              </div>
-            </div>
-            <div class="objective-item">
-              <span class="objective-icon">📝</span>
-              <div class="objective-content">
-                <strong>Xray/Jira + IA</strong> — Automatiser la création de
-                scénarios Gherkin à partir de User Stories
-              </div>
-            </div>
-            <div class="objective-item">
-              <span class="objective-icon">🔐</span>
-              <div class="objective-content">
-                <strong>TestComplete + IA</strong> — Automatiser des workflows
-                complexes incluant l'authentification 2FA
-              </div>
-            </div>
-            <div class="objective-item">
-              <span class="objective-icon">🧪</span>
-              <div class="objective-content">
-                <strong>Cypress + IA</strong> — Créer des Page Object Models et
-                des tests E2E structurés avec l'assistance de l'IA
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="objectives-section">
-          <h2>🎯 Objectifs de cette Section</h2>
-          <p class="intro-text">
-            À l'issue de cette section, vous serez capable de :
-          </p>
-          <div class="objectives-list">
-            <div class="objective-item">
               <span class="objective-icon">📋</span>
               <div class="objective-content">
                 <strong>Définir les fondations</strong> — Créer les fichiers de
@@ -136,7 +98,7 @@
             <h4>🎯 Objectif Pédagogique</h4>
             <p>
               Vous allez construire cette application de A à Z en utilisant
-              <strong>6 prompts successifs</strong> qui s'appuient les uns sur
+              <strong>7 prompts successifs</strong> qui s'appuient les uns sur
               les autres. Ce workflow complet démontre comment l'IA peut
               accélérer chaque phase : spécifications → développement → tests.
             </p>
@@ -509,17 +471,227 @@
           <div class="card mt-lg">
             <h3>Le Pouvoir du Contexte</h3>
             <p>
-              Les prompts suivants
-              <strong>référencent explicitement</strong> les fichiers
-              <code>instructions.md</code> et <code>prd.md</code>
-              générés précédemment. L'IA utilisera ces spécifications pour
-              générer du code parfaitement aligné avec vos règles.
+              Le premier prompt va générer l'architecture complète (Backend +
+              Template HTML) en
+              <strong>attachant les fichiers de specs</strong> (<code
+                >instructions.md</code
+              >
+              et <code>prd.md</code>). Les prompts suivants ajouteront ensuite
+              les couches JavaScript et CSS. L'IA utilisera ces spécifications
+              pour générer du code parfaitement aligné avec vos règles.
             </p>
           </div>
 
           <!-- PROMPT 3 -->
           <div class="card success mt-lg">
-            <h4>C. Prompt 3 : Générer main.js</h4>
+            <h4>
+              C. Prompt 3 : Générer l'Architecture Complète (Backend + Template)
+            </h4>
+            <button class="collapsible-btn" onclick="toggleCollapsible(this)">
+              📋 Voir le Prompt pour l'Architecture
+            </button>
+            <div class="collapsible-content">
+              <div style="text-align: right; margin-bottom: 0.5rem">
+                <button
+                  onclick="copyPrompt(this)"
+                  style="
+                    background: #2196f3;
+                    color: white;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 0.9em;
+                  "
+                >
+                  📋 Copier le prompt
+                </button>
+              </div>
+              <div
+                style="
+                  background: #e3f2fd;
+                  border-left: 4px solid #2196f3;
+                  padding: 1rem;
+                  margin: 0.5rem 0;
+                "
+              >
+                <h4>🔵 Rôle</h4>
+                <p>
+                  Tu es un <strong>Développeur Full-Stack Senior</strong>
+                  spécialisé en Spring Boot et Thymeleaf.
+                </p>
+              </div>
+              <div
+                style="
+                  background: #fff3e0;
+                  border-left: 4px solid #ff9800;
+                  padding: 1rem;
+                  margin: 0.5rem 0;
+                "
+              >
+                <h4>🟡 Contexte</h4>
+                <p>
+                  Le projet 'navdash' nécessite une architecture complète
+                  backend + frontend. Les règles techniques et exigences
+                  fonctionnelles sont définies dans deux fichiers de référence
+                  que j'ai attachés à ce chat : <code>instructions.md</code> et
+                  <code>prd.md</code>.
+                </p>
+              </div>
+              <div
+                style="
+                  background: #e8f5e9;
+                  border-left: 4px solid #4caf50;
+                  padding: 1rem;
+                  margin: 0.5rem 0;
+                "
+              >
+                <h4>🟢 Tâche</h4>
+                <p>
+                  Génère la solution complète en t'appuyant sur les 2 fichiers
+                  référencés. La solution doit inclure :
+                </p>
+                <ol>
+                  <li>
+                    Le Controller Spring Boot
+                    (<code>DiagnosticController.java</code>) avec les endpoints
+                    nécessaires
+                  </li>
+                  <li>
+                    Le template Thymeleaf (<code>dashboard.html</code>) avec
+                    tous les éléments UI
+                  </li>
+                  <li>
+                    Les DTOs requis pour la communication frontend-backend
+                  </li>
+                </ol>
+              </div>
+              <div
+                style="
+                  background: #ffebee;
+                  border-left: 4px solid #f44336;
+                  padding: 1rem;
+                  margin: 0.5rem 0;
+                "
+              >
+                <h4>🔴 Contraintes</h4>
+                <ol>
+                  <li>
+                    Respecte <strong>TOUTES</strong> les règles définies dans
+                    <code>instructions.md</code>
+                    (naming, data-cy, architecture MVC)
+                  </li>
+                  <li>
+                    Implémente <strong>TOUTES</strong> les fonctionnalités
+                    définies dans <code>prd.md</code>
+                    (métriques, formulaire, règles conditionnelles)
+                  </li>
+                  <li>
+                    Le code doit être production-ready avec gestion d'erreurs
+                    appropriée
+                  </li>
+                  <li>
+                    Assure-toi que chaque élément interactif possède son
+                    attribut <code>data-cy</code>
+                    pour les tests E2E
+                  </li>
+                  <li>
+                    Le template HTML doit inclure les balises
+                    <code>&lt;script&gt;</code> et
+                    <code>&lt;link&gt;</code> pour charger les futurs fichiers
+                    <code>main.js</code> et <code>style.css</code>
+                  </li>
+                </ol>
+              </div>
+              <div
+                style="
+                  background: #f3e5f5;
+                  border-left: 4px solid #9c27b0;
+                  padding: 1rem;
+                  margin: 0.5rem 0;
+                "
+              >
+                <h4>🟣 Format</h4>
+                <p>
+                  Code Java complet pour le Controller + code HTML/Thymeleaf
+                  complet pour le template, avec commentaires explicatifs pour
+                  les parties critiques.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- INFO : ATTACHER DES FICHIERS -->
+          <div class="card info mt-md">
+            <h4>💡 Technique Clé : Attacher des Fichiers au Chat</h4>
+            <p><strong>Comment procéder dans GitHub Copilot Chat :</strong></p>
+            <ol>
+              <li>
+                Ouvrez le panneau GitHub Copilot Chat (<kbd>Ctrl+Alt+I</kbd> ou
+                <kbd>Cmd+Option+I</kbd>)
+              </li>
+              <li>
+                Cliquez sur l'icône <strong>📎 (trombone)</strong> en bas de la
+                zone de saisie
+              </li>
+              <li>
+                Sélectionnez <code>instructions.md</code> et
+                <code>prd.md</code> depuis votre explorateur de fichiers
+              </li>
+              <li>
+                Vérifiez que les 2 fichiers apparaissent comme "attachés"
+                au-dessus de votre prompt (badges avec icône ×)
+              </li>
+              <li>Collez le prompt ci-dessus et envoyez</li>
+            </ol>
+            <p class="mt-md">
+              <strong>💪 Pourquoi c'est puissant :</strong> L'IA lira le contenu
+              <strong>complet</strong> des fichiers attachés et générera du code
+              parfaitement cohérent avec vos spécifications, sans que vous ayez
+              besoin de tout re-copier dans le prompt ! Cette technique est
+              particulièrement utile pour les fichiers de configuration, specs
+              techniques, ou exemples de code.
+            </p>
+
+            <div style="text-align: center; margin-top: 1.5rem">
+              <img
+                src="../assets/images/copilot-attach-files.png"
+                alt="Exemple d'attachement de fichiers dans GitHub Copilot Chat"
+                style="
+                  max-width: 100%;
+                  border: 2px solid #2196f3;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                "
+              />
+              <p
+                style="
+                  font-size: 0.9em;
+                  color: #666;
+                  margin-top: 0.75rem;
+                  font-style: italic;
+                "
+              >
+                📸 Exemple : 2 fichiers attachés au chat avant l'envoi du prompt
+              </p>
+            </div>
+
+            <div
+              class="card warning"
+              style="margin-top: 1rem; background: #fff3e0"
+            >
+              <p style="margin: 0">
+                <strong>💡 Astuce :</strong> Si vous ne trouvez pas l'icône 📎,
+                assurez-vous d'utiliser une version récente de GitHub Copilot.
+                L'attachement de fichiers est disponible dans VS Code, Visual
+                Studio, et JetBrains IDEs.
+              </p>
+            </div>
+          </div>
+
+          <!-- PROMPT 4 -->
+          <div class="card success mt-lg">
+            <h4>D. Prompt 4 : Générer main.js</h4>
             <button class="collapsible-btn" onclick="toggleCollapsible(this)">
               📋 Voir le Prompt pour script.js
             </button>
@@ -629,9 +801,9 @@
             </div>
           </div>
 
-          <!-- PROMPT 4 -->
+          <!-- PROMPT 5 -->
           <div class="card success mt-lg">
-            <h4>D. Prompt 4 : Générer style.css</h4>
+            <h4>E. Prompt 5 : Générer style.css</h4>
             <button class="collapsible-btn" onclick="toggleCollapsible(this)">
               📋 Voir le Prompt pour CSS
             </button>
@@ -703,17 +875,27 @@
             <h4>🎯 À vous de jouer !</h4>
             <ol>
               <li>
-                Exécutez <strong>Prompt 3</strong> →
-                <code>static/js/main.js</code>
+                <strong>Prompt 3</strong> : Attachez
+                <code>instructions.md</code> + <code>prd.md</code> au chat,
+                exécutez le prompt → Sauvegardez
+                <code>DiagnosticController.java</code> et
+                <code>dashboard.html</code>
               </li>
               <li>
                 Exécutez <strong>Prompt 4</strong> →
+                <code>static/js/main.js</code>
+              </li>
+              <li>
+                Exécutez <strong>Prompt 5</strong> →
                 <code>static/css/style.css</code>
               </li>
               <li>
-                Ouvrez l'app dans le navigateur (<code>localhost:8087</code>)
+                Démarrez l'app Spring Boot et ouvrez <code>localhost:8087</code>
               </li>
-              <li>Testez manuellement : changez la batterie dans DevTools</li>
+              <li>
+                Testez manuellement : changez la batterie dans DevTools,
+                réduisez la fenêtre
+              </li>
             </ol>
 
             <div
@@ -721,7 +903,27 @@
               style="margin-top: 1rem; background: #e3f2fd"
             >
               <h4>💡 Idées d'Enrichissement des Prompts</h4>
-              <p><strong>Pour le JavaScript (Prompt 3) :</strong></p>
+              <p><strong>Pour l'Architecture (Prompt 3) :</strong></p>
+              <ul>
+                <li>
+                  "Ajoute un endpoint REST /api/metrics qui retourne les
+                  métriques en JSON pour un dashboard externe"
+                </li>
+                <li>
+                  "Implémente la validation côté serveur avec Spring Validation
+                  (@Valid, @NotNull)"
+                </li>
+                <li>
+                  "Ajoute un système de cache avec Spring Cache pour optimiser
+                  les appels API"
+                </li>
+                <li>
+                  "Génère aussi les tests unitaires JUnit 5 pour le Controller"
+                </li>
+              </ul>
+              <p class="mt-md">
+                <strong>Pour le JavaScript (Prompt 4) :</strong>
+              </p>
               <ul>
                 <li>
                   "Utilise ESLint avec la config Airbnb pour garantir la qualité
@@ -740,7 +942,7 @@
                   métriques"
                 </li>
               </ul>
-              <p class="mt-md"><strong>Pour le CSS (Prompt 4) :</strong></p>
+              <p class="mt-md"><strong>Pour le CSS (Prompt 5) :</strong></p>
               <ul>
                 <li>
                   "Utilise la palette de couleurs Material Design avec bleu
@@ -782,9 +984,9 @@
             </p>
           </div>
 
-          <!-- PROMPT 5 -->
+          <!-- PROMPT 6 -->
           <div class="card success mt-lg">
-            <h4>E. Prompt 5 : Générer test_instructions.md</h4>
+            <h4>F. Prompt 6 : Générer test_instructions.md</h4>
             <button class="collapsible-btn" onclick="toggleCollapsible(this)">
               📋 Voir le Prompt pour test_instructions.md
             </button>
@@ -930,9 +1132,9 @@
             </div>
           </div>
 
-          <!-- PROMPT 6 -->
+          <!-- PROMPT 7 -->
           <div class="card success mt-lg">
-            <h4>F. Prompt 6 : Générer networkAndBatteryValidation.cy.ts</h4>
+            <h4>G. Prompt 7 : Générer networkAndBatteryValidation.cy.ts</h4>
             <button class="collapsible-btn" onclick="toggleCollapsible(this)">
               📋 Voir le Prompt pour les Tests Cypress
             </button>
@@ -1032,11 +1234,11 @@
             <h4>🎯 À vous de jouer !</h4>
             <ol>
               <li>
-                Exécutez <strong>Prompt 5</strong> →
+                Exécutez <strong>Prompt 6</strong> →
                 <code>test_instructions.md</code>
               </li>
               <li>
-                Exécutez <strong>Prompt 6</strong> →
+                Exécutez <strong>Prompt 7</strong> →
                 <code>cypress/e2e/networkAndBatteryValidation.cy.ts</code>
               </li>
               <li>Lancez Cypress : <code>npm run cypress:open</code></li>
@@ -1048,7 +1250,7 @@
               style="margin-top: 1rem; background: #e3f2fd"
             >
               <h4>💡 Idées d'Enrichissement des Prompts de Tests</h4>
-              <p><strong>Pour test_instructions.md (Prompt 5) :</strong></p>
+              <p><strong>Pour test_instructions.md (Prompt 6) :</strong></p>
               <ul>
                 <li>
                   "Ajoute une section sur les tests de performance avec Cypress
@@ -1068,7 +1270,7 @@
                 </li>
               </ul>
               <p class="mt-md">
-                <strong>Pour les tests Cypress (Prompt 6) :</strong>
+                <strong>Pour les tests Cypress (Prompt 7) :</strong>
               </p>
               <ul>
                 <li>
@@ -1097,7 +1299,7 @@
           <h2>🎯 Le Message Clé de cette Section</h2>
           <p>
             Vous avez construit une application complète de A à Z en utilisant
-            <strong>6 prompts successifs et interdépendants</strong> :
+            <strong>7 prompts successifs et interdépendants</strong> :
           </p>
           <ul>
             <li>
@@ -1105,11 +1307,11 @@
               prd.md) → La fondation
             </li>
             <li>
-              ✅ <strong>Prompts 3-4</strong> : Code Frontend (JavaScript, CSS)
-              → Le développement
+              ✅ <strong>Prompts 3-5</strong> : Architecture + Code Frontend
+              (Backend, JavaScript, CSS) → Le développement
             </li>
             <li>
-              ✅ <strong>Prompts 5-6</strong> : Tests E2E (Cypress) → La
+              ✅ <strong>Prompts 6-7</strong> : Tests E2E (Cypress) → La
               validation
             </li>
           </ul>
