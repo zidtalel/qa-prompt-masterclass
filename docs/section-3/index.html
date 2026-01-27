@@ -105,6 +105,105 @@
           </div>
         </section>
 
+        <!-- SECTION TÉLÉCHARGEMENT PROJET -->
+        <section class="mt-xl">
+          <h2>📦 Téléchargement du Projet de Base</h2>
+
+          <div class="card warning">
+            <h3>⚡ Gagnez du Temps : Projet Pré-configuré</h3>
+            <p>
+              Pour éviter de perdre du temps sur la configuration initiale du
+              projet et l'ajout des dépendances Maven, nous avons préparé un
+              projet de base <strong>navdash.zip</strong> qui contient :
+            </p>
+            <ul>
+              <li>
+                ✅ Structure de dossiers Maven standard
+                (<code>src/main/java</code>, <code>src/main/resources</code>,
+                <code>src/test/java</code>)
+              </li>
+              <li>
+                ✅ Fichier <code>pom.xml</code> complet avec toutes les
+                dépendances nécessaires (Spring Boot 2.7.18, Thymeleaf,
+                WebSocket, JUnit 5, etc.)
+              </li>
+              <li>✅ Configuration de base prête pour démarrer</li>
+            </ul>
+          </div>
+
+          <div class="card highlight mt-lg">
+            <h3>📥 Instructions de Téléchargement et Installation</h3>
+
+            <h4 style="margin-top: 1.5rem">1️⃣ Télécharger le fichier</h4>
+            <div style="text-align: center; margin: 1rem 0">
+              <a
+                href="../assets/navdash.zip"
+                class="button"
+                download
+                style="font-size: 1.1rem; padding: 1rem 2rem"
+              >
+                📦 Télécharger navdash.zip
+              </a>
+            </div>
+
+            <h4 style="margin-top: 1.5rem">
+              2️⃣ Extraire le projet dans VS Code
+            </h4>
+            <ol style="line-height: 1.8">
+              <li>Ouvrez <strong>VS Code</strong></li>
+              <li>
+                Cliquez sur <strong>File → Open Folder...</strong> (ou
+                <kbd>Ctrl+K Ctrl+O</kbd>)
+              </li>
+              <li>
+                Naviguez vers l'emplacement où vous souhaitez extraire le projet
+              </li>
+              <li>
+                Créez un nouveau dossier nommé <code>navdash</code> et
+                sélectionnez-le
+              </li>
+              <li>
+                Extrayez le contenu du fichier <code>navdash.zip</code> dans ce
+                dossier
+              </li>
+              <li>
+                VS Code va automatiquement détecter le projet Maven et charger
+                les dépendances
+              </li>
+            </ol>
+
+            <h4 style="margin-top: 1.5rem">3️⃣ Vérifier l'installation</h4>
+            <p>
+              Une fois le projet ouvert dans VS Code, vous devriez voir cette
+              structure :
+            </p>
+            <pre><code>navdash/
+├── pom.xml                    ← Configuration Maven complète
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/bdeb/navdash/
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       ├── static/
+│   │       └── templates/
+│   └── test/
+│       └── java/
+│           └── com/bdeb/navdash/
+└── target/                    ← Créé après le premier build</code></pre>
+
+            <div class="card success" style="margin-top: 1rem">
+              <h4>✅ Prêt à Démarrer !</h4>
+              <p>
+                Une fois le projet ouvert, Maven va automatiquement télécharger
+                toutes les dépendances. Vous pouvez maintenant passer au
+                <strong>Module 3.1</strong> pour commencer à créer les fichiers
+                de spécifications avec l'aide de l'IA !
+              </p>
+            </div>
+          </div>
+        </section>
+
         <!-- MODULE 3.1 : FONDATIONS DU PROJET -->
         <section class="mt-xl">
           <h2>📐 Module 3.1 : Fondations du Projet avec l'IA (15 min)</h2>
